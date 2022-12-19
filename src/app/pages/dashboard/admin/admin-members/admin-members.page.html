@@ -1,0 +1,223 @@
+<ion-menu
+  side="start"
+  type="overlay"
+  menuId="adminMenu-site-members"
+  contentId="admin-site-members"
+>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title
+        ><center>
+          <img src="../../../../../assets/logo.PNG" alt="" /></center
+      ></ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item (click)="navigate(1)">
+        <div class="center-these">
+          <ion-icon name="home-outline"></ion-icon>
+          <p>Home</p>
+        </div>
+      </ion-item>
+      <ion-item (click)="navigate(2)">
+        <div class="center-these">
+          <ion-icon name="accessibility-outline"></ion-icon>
+          <p>Add Policy Holder</p>
+        </div>
+      </ion-item>
+
+      <ion-item (click)="navigate(6)">
+        <div class="center-these">
+          <ion-icon name="camera-outline"></ion-icon>
+          <p>Add to Gallery</p>
+        </div>
+      </ion-item>
+      <ion-item (click)="navigate(3)" class="admin-active">
+        <div class="center-these">
+          <ion-icon name="people-outline"></ion-icon>
+          <p>Members</p>
+        </div>
+      </ion-item>
+
+      <ion-item (click)="navigate(7)">
+        <div class="center-these">
+          <ion-icon name="phone-landscape-outline"></ion-icon>
+          <p>View Gallery</p>
+        </div>
+      </ion-item>
+
+      <ion-item (click)="navigate(4)">
+        <div class="center-these">
+          <ion-icon name="color-palette-outline"></ion-icon>
+          <p>Deals</p>
+        </div>
+      </ion-item>
+      <ion-item (click)="navigate(5)">
+        <div class="center-these">
+          <ion-icon name="construct-outline"></ion-icon>
+          <p>Update Website / App</p>
+        </div>
+      </ion-item>
+      <ion-item (click)="navigate(0)">
+        <div class="center-these">
+          <ion-icon name="power-outline"></ion-icon>
+          <p>Logout</p>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet id="admin-site-members"></ion-router-outlet>
+
+<ion-header>
+  <ion-toolbar class="admin-menus">
+    <ion-title slot="center">Members</ion-title>
+    <ion-buttons slot="start" (click)="adminMenu('-site-members')">
+      <ion-icon name="menu-outline" size="large"></ion-icon>
+    </ion-buttons>
+
+    <h4 style="margin-left: 40%">Members</h4>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="admin-cover">
+  <div class="my-members">
+    <div class="member-id"></div>
+    <div class="single-member">
+      <div class="number"><i>1.</i></div>
+      <div class="name"><p>Zuza Mselsku</p></div>
+      <div class="mail"><p>imi@mail.com</p></div>
+      <div class="date"><p>07-Jan-2022</p></div>
+      <div class="packages"><p>Simple & Premium</p></div>
+      <div class="buttons">
+        <div class="call">
+          <button>
+            <i>Message</i>
+            <ion-icon name="mail-unread-outline"></ion-icon>
+          </button>
+        </div>
+        <div class="remove">
+          <button>
+            <i>Delete </i>
+            <ion-icon name="close-circle-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="single-member flip">
+      <div class="number"><i>2.</i></div>
+      <div class="name"><p>Mfo Fhula</p></div>
+      <div class="mail"><p>legend@mfo.com</p></div>
+      <div class="date"><p>11-May-2022</p></div>
+      <div class="packages"><p>The Real Deal</p></div>
+      <div class="buttons">
+        <div class="call">
+          <button>
+            <i>Message</i>
+            <ion-icon name="mail-unread-outline"></ion-icon>
+          </button>
+        </div>
+        <div class="remove">
+          <button>
+            <i>Delete </i>
+            <ion-icon name="close-circle-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="single-member">
+      <div class="number"><i>3.</i></div>
+      <div class="name"><p>Joe Man</p></div>
+      <div class="mail"><p>joe@jjoe</p></div>
+      <div class="date"><p>25-June-2021</p></div>
+      <div class="packages"><p>Full</p></div>
+      <div class="buttons">
+        <div class="call">
+          <button>
+            <i>Message</i>
+            <ion-icon name="mail-unread-outline"></ion-icon>
+          </button>
+        </div>
+        <div class="remove">
+          <button>
+            <i>Delete </i>
+            <ion-icon name="close-circle-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="single-member flip">
+      <div class="number"><i>4.</i></div>
+      <div class="name"><p>Vuyo Somebody</p></div>
+      <div class="mail"><p>vuyond@mfo.com</p></div>
+      <div class="date"><p>11-May-2022</p></div>
+      <div class="packages"><p>Simple</p></div>
+      <div class="buttons">
+        <div class="call">
+          <button>
+            <i>Message</i>
+            <ion-icon name="mail-unread-outline"></ion-icon>
+          </button>
+        </div>
+        <div class="remove">
+          <button>
+            <i>Delete </i>
+            <ion-icon name="close-circle-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="single-member">
+      <div class="number"><i>5.</i></div>
+      <div class="name"><p>Raymond Joyles</p></div>
+      <div class="mail"><p>rayjules@gmail.com</p></div>
+      <div class="date"><p>15-Dec-2021</p></div>
+      <div class="packages"><p>Full</p></div>
+      <div class="buttons">
+        <div class="call">
+          <button>
+            <i>Message</i>
+            <ion-icon name="mail-unread-outline"></ion-icon>
+          </button>
+        </div>
+        <div class="remove">
+          <button>
+            <i>Delete </i>
+            <ion-icon name="close-circle-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="single-member flip">
+      <div class="number"><i>6.</i></div>
+      <div class="name"><p>Ghulele Baloyi</p></div>
+      <div class="mail"><p>vuyond@mfo.com</p></div>
+      <div class="date"><p>11-May-2022</p></div>
+      <div class="packages"><p>Simple</p></div>
+      <div class="buttons">
+        <div class="call">
+          <button>
+            <i>Message</i>
+            <ion-icon name="mail-unread-outline"></ion-icon>
+          </button>
+        </div>
+        <div class="remove">
+          <button>
+            <i>Delete </i>
+            <ion-icon name="close-circle-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="load">
+    <i>load more</i>
+    <ion-icon name="refresh-circle-outline"></ion-icon>
+  </button>
+</ion-content>

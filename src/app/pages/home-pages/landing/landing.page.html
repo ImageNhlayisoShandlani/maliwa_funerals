@@ -1,0 +1,319 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="desktop-menu" (scroll)="onWindowScroll();">
+      <a class="logo">
+        <img src="../../../../assets/funeral.png" />
+      </a>
+
+      <ul>
+        <li class="active" (click)="home()">
+          <a>Home</a>
+        </li>
+        <li (click)="products()">
+          <a>Products</a>
+        </li>
+        <li (click)="gallery()">
+          <a>Gallery</a>
+        </li>
+        <li (click)="about()">
+          <a>About US</a>
+        </li>
+        <li (click)="contact()">
+          <a>Contact US</a>
+        </li>
+
+        <li (click)="admin()">
+          <a>Admin</a>
+        </li>
+      </ul>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="box-wrapper">
+  <div class="banner">
+    <div class="pic-back">
+      <img src="../../../../assets/images.jpg" alt="" />
+    </div>
+    <div class="over-banner">
+      <div>
+        <h3>Mawila HHS funeral Services :</h3>
+        <p>&dot; &nbsp; Get all your funeral services here</p>
+        <p>&dot; &nbsp; Get all your funeral services here</p>
+        <p>&dot; &nbsp; Get all your funeral services here</p>
+        <p>&dot; &nbsp; Get all your funeral services here</p>
+        <p>&dot; &nbsp; Get all your funeral services here</p>
+
+        <div id="quote-below">
+          <p>
+            <i>"</i>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quos
+            alias veniam. Natus, possimus repudiandae illum tempora, quidem
+            numquam, adipisci ipsum reiciendis impedit repellendus hic!
+            <i>"</i>
+          </p>
+          <p class="name">Jordan P Baloyi</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="heading">
+    <h2>Services we offer</h2>
+  </div>
+  <div class="middle-home">
+    <div class="services">
+      <div class="single-service">
+        <ion-icon name="skull-outline"></ion-icon>
+        <div class="heading-service"><h5>Burials</h5></div>
+        <div class="description">
+          <p>
+            ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
+            distinctio reiciendis natus.
+          </p>
+        </div>
+        <ion-button (click)="getOffer()">Get Now</ion-button>
+      </div>
+
+      <div class="single-service">
+        <ion-icon name="heart-half-outline"></ion-icon>
+        <div class="heading-service"><h5>Memorials</h5></div>
+        <div class="description">
+          <p>
+            ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
+            distinctio reiciendis natus, ipsum dolor sit amet, consectetur
+            adipisicing elit. Obcaecati distinctio reiciendis natus.
+          </p>
+        </div>
+        <ion-button (click)="getOffer()">Get Now</ion-button>
+      </div>
+
+      <div class="single-service">
+        <ion-icon name="people-outline"></ion-icon>
+        <div class="heading-service"><h5>Funeral Cover</h5></div>
+        <div class="description">
+          <p>
+            ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
+            distinctio reiciendis natus, ipsum dolor sit amet, consectetur
+            adipisicing elit. Obcaecati distinctio reiciendis natus.
+          </p>
+        </div>
+        <ion-button (click)="getOffer()">Get Now</ion-button>
+      </div>
+
+      <div class="single-service">
+        <ion-icon name="book-outline"></ion-icon>
+        <div class="heading-service"><h5>Obituary</h5></div>
+        <div class="description">
+          <p>
+            ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
+            distinctio reiciendis natus, ipsum dolor sit amet, consectetur
+            adipisicing elit. Obcaecati distinctio reiciendis natus.
+          </p>
+        </div>
+        <ion-button (click)="getOffer()">Get Now</ion-button>
+      </div>
+    </div>
+    <div class="second-banner">
+      <div id="left-pic">
+        <img
+          src="../../../../assets/funeral-service-pretoria-gauteng.jpg "
+          alt=""
+        />
+      </div>
+      <div id="second-description">
+        <h2>The Ultimate Pack</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cum
+          impedit veniam alias repellendus accusantium, harum quae fugit
+          aspernatur a, excepturi animi facere. Sequi, consectetur minima!
+        </p>
+        <ion-button (click)="getOffer()">Get Now</ion-button>
+      </div>
+    </div>
+  </div>
+
+  <div class="products">
+    <div class="heading">
+      <h2>Our Products</h2>
+      <br />
+
+      <div class="side-top-five">
+        <div class="single-top-six">
+          <div class="photo">
+            <img src="../../../../assets/cas1.jpg" alt="" />
+          </div>
+          <div class="middle-top-five">
+            <p>Casket&nbsp; <i>R</i>1500</p>
+          </div>
+          <div class="button-top-photo">
+            <button>Shop</button>
+          </div>
+        </div>
+
+        <div class="single-top-six" (click)="goToShop(2)">
+          <div class="photo">
+            <img src="../../../../assets/images (1).jpg" alt="" />
+          </div>
+          <div class="middle-top-five">
+            <p>Tombstone&nbsp; <i>R</i>800</p>
+          </div>
+          <div class="button-top-photo">
+            <button>Shop</button>
+          </div>
+        </div>
+        <div class="single-top-six">
+          <div class="photo">
+            <img src="../../../../assets/fast-hurae.jpg" alt="" />
+          </div>
+          <div class="middle-top-five">
+            <p>Fast Hurse &nbsp; <i>R</i>2000</p>
+          </div>
+          <div class="button-top-photo">
+            <button>Shop</button>
+          </div>
+        </div>
+        <div class="single-top-six">
+          <div class="photo">
+            <img src="../../../../assets/urn.jpg" alt="" />
+          </div>
+          <div class="middle-top-five">
+            <p>Urn&nbsp; <i>R</i>500</p>
+          </div>
+          <div class="button-top-photo">
+            <button>Shop</button>
+          </div>
+        </div>
+        <div class="single-top-six">
+          <div class="photo">
+            <img src="../../../../assets/tent.jpg" alt="" />
+          </div>
+          <div class="middle-top-five">
+            <p>Tents&nbsp; <i>R</i>4366</p>
+          </div>
+          <div class="button-top-photo">
+            <button>Shop</button>
+          </div>
+        </div>
+        <div class="single-top-six">
+          <div class="photo">
+            <img src="../../../../assets/cas1.jpg" alt="" />
+          </div>
+          <div class="middle-top-five">
+            <p>Caskets&nbsp; <i>R</i>2000</p>
+          </div>
+          <div class="button-top-photo">
+            <button>Shop</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--
+  <img src="../../../../assets/logo.PNG" />
+  <img src="../../../../assets/logo.PNG" />
+  <img src="../../../../assets/logo.PNG" />
+  <img src="../../../../assets/logo.PNG" id="non" />
+  <button (click)="take()">Huyr</button>
+  -->
+
+  <div class="testimonials">
+    <div class="cover-testimonials">
+      <div class="heading">
+        <h2>Testimonials</h2>
+      </div>
+
+      <div class="single-testimony">
+        <div class="testimony-pic">
+          <img src="../../../../assets/profile.jpg" alt="" />
+        </div>
+        <div class="the-testimony">
+          <h5>Bhut MaJulie</h5>
+          <div class="testimony-text">
+            <p id="test-m">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Reprehenderit quod explicabo praesentium sunt temporibus enim
+              corrupti cum cumque aliquid, eveniet ducimus asperiores maiores
+              tempore blanditiis laudantium? Esse perspiciatis rerum blanditiis?
+            </p>
+          </div>
+          <p id="test-icon">
+            <ion-icon name="time-outline"></ion-icon> &nbsp; 26 Fevruary 2020
+          </p>
+        </div>
+      </div>
+
+      <div class="single-testimony">
+        <div class="testimony-pic">
+          <img src="../../../../assets/gol.jpg" alt="" />
+        </div>
+        <div class="the-testimony">
+          <h5>Ngolo Kante</h5>
+          <div class="testimony-text">
+            <p id="test-m">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Reprehenderit quod explicabo praesentium sunt temporibus enim
+              corrupti cum cumque aliquid, eveniet ducimus asperiores maiores
+              tempore blanditiis laudantium? Esse perspiciatis rerum blanditiis?
+            </p>
+          </div>
+          <p id="test-icon">
+            <ion-icon name="time-outline"></ion-icon> &nbsp; 26 Fevruary 2020
+          </p>
+        </div>
+      </div>
+
+      <div class="single-testimony">
+        <div class="testimony-pic">
+          <img src="../../../../assets/mane.jpg" alt="" />
+        </div>
+        <div class="the-testimony">
+          <h5>Sadia Mane</h5>
+          <div class="testimony-text">
+            <p id="test-m">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Reprehenderit quod explicabo praesentium sunt temporibus enim
+              corrupti cum cumque aliquid, eveniet ducimus asperiores maiores
+              tempore blanditiis laudantium? Esse perspiciatis rerum blanditiis?
+            </p>
+          </div>
+          <p id="test-icon">
+            <ion-icon name="time-outline"></ion-icon> &nbsp; 26 Fevruary 2020
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="heading">
+    <h2>Since We Started</h2>
+  </div>
+
+  <div class="stats-div">
+    <div class="single-stat">
+      <div class="main-stat">
+        <ion-icon name="golf-outline"></ion-icon>
+        <p>Completed Funerals</p>
+      </div>
+      <div class="over-stat"><p>2568</p></div>
+    </div>
+
+    <div class="single-stat">
+      <div class="main-stat">
+        <ion-icon name="people-outline"></ion-icon>
+        <p>Members</p>
+      </div>
+      <div class="over-stat"><p>1150</p></div>
+    </div>
+
+    <div class="single-stat">
+      <div class="main-stat">
+        <ion-icon name="person-outline"></ion-icon>
+        <p>Memorials</p>
+      </div>
+      <div class="over-stat"><p>657</p></div>
+    </div>
+  </div>
+
+  <app-footer></app-footer>
+</ion-content>

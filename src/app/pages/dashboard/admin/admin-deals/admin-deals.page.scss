@@ -1,0 +1,272 @@
+.heading {
+  display: contents;
+  justify-content: flex-start !important;
+  padding-left: 2% !important;
+
+  h2 {
+    margin-left: 5%;
+    color: #333;
+  }
+}
+
+.deals {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  .single-deal {
+    width: 26%;
+    height: 90%;
+    background: #eee;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+    .img {
+      width: 100%;
+      height: 40%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .text {
+      padding-top: 0.8rem;
+      padding-left: 0.5rem;
+      width: 100%;
+      height: 50%;
+
+      h5 {
+        color: #333;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+
+      p {
+        color: #777;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+
+      i {
+        color: #cd9833;
+        font-family: cursive;
+        font-weight: bolder;
+        font-size: 1.2rem;
+      }
+    }
+
+    .btns {
+      width: 100%;
+      height: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: row;
+
+      button {
+        width: 6.5rem;
+        height: 80%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+      }
+
+      .update {
+        background: transparent;
+        border: 1px solid #cd9833;
+        color: #cd9833;
+        font-size: 1.18rem;
+      }
+
+      .remove {
+        background: red;
+        color: #ddd;
+        font-size: 1.18rem;
+      }
+    }
+  }
+}
+
+.add {
+  margin-left: 5%;
+  width: 6rem;
+  background: #3e4093;
+  color: #ddd;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  height: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.18rem;
+}
+
+@media (min-width: 350px) and (max-width: 500px) and (orientation: portrait) {
+  ion-header {
+    display: initial !important;
+
+    h4 {
+      margin-left: 3rem !important;
+    }
+  }
+  .deals {
+    height: 210vh !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+
+    .single-deal {
+      width: 96% !important;
+      height: 32% !important;
+      margin-bottom: 1rem !important;
+    }
+  }
+}
+
+@media (min-width: 660px) and (max-width: 925px) and (orientation: landscape) {
+  ion-toolbar {
+    display: flex !important;
+  }
+  ion-header {
+    display: flex !important;
+    h4 {
+      margin-left: 14rem !important;
+    }
+  }
+
+  .deals {
+    height: 148vh !important;
+
+    .single-deal {
+      width: 31% !important;
+    }
+  }
+}
+
+@media (min-width: 491px) and (max-width: 760px) and (orientation: portrait) {
+  ion-header {
+    display: flex !important;
+  }
+
+  ion-toolbar {
+    display: flex !important;
+  }
+  .deals {
+    height: 210vh !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+
+    .single-deal {
+      width: 80% !important;
+      height: 32% !important;
+      margin-bottom: 1rem !important;
+
+      .img {
+        height: 48% !important;
+      }
+    }
+  }
+}
+
+/******************* SMALL TABLET Landscape VIERW *****************************************/
+
+@media (min-width: 719px) and (max-width: 1020px) and (min-height: 500px) and (orientation: landscape) {
+  ion-header {
+    display: flex !important;
+  }
+
+  ion-toolbar {
+    display: flex !important;
+  }
+
+  .deals {
+    height: fit-content !important;
+
+    .single-deal {
+      width: 45% !important;
+      height: 88vh !important;
+      margin-bottom: 3rem;
+
+      .img {
+        height: 53% !important;
+      }
+    }
+  }
+}
+
+/********************************** LARGE TABLET Portarit VIEW ***********************************************/
+@media (min-width: 761px) and (max-width: 920px) and (orientation: portrait) {
+  ion-header {
+    display: flex !important;
+  }
+
+  ion-toolbar {
+    display: flex !important;
+  }
+
+  .deals {
+    height: fit-content !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+
+    .single-deal {
+      width: 80% !important;
+      height: 50vh !important;
+      margin-bottom: 1rem !important;
+
+      .img {
+        height: 55% !important;
+      }
+    }
+  }
+}
+
+/********************************** LARGE TABLET Landscape VIEW ***********************************************/
+@media (min-width: 1020px) and (max-width: 1370px) and (min-height: 760px) and (orientation: landscape) {
+  ion-header {
+    display: flex !important;
+  }
+
+  ion-toolbar {
+    display: flex !important;
+  }
+
+  .deals {
+    height: fit-content !important;
+
+    .single-deal {
+      width: 45% !important;
+      height: 88vh !important;
+      margin-bottom: 3rem;
+
+      .img {
+        height: 53% !important;
+      }
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  ion-content {
+    --background: #111 !important;
+
+    .text,
+    .btns {
+      background: #222 !important;
+    }
+  }
+}

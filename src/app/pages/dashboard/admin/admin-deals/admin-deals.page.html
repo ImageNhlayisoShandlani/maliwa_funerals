@@ -1,0 +1,166 @@
+<ion-menu
+  side="start"
+  type="overlay"
+  menuId="adminMenu-site-deals"
+  contentId="admin-site-deals"
+>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title
+        ><center>
+          <img src="../../../../../assets/logo.PNG" alt="" /></center
+      ></ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item (click)="navigate(1)">
+        <div class="center-these">
+          <ion-icon name="home-outline"></ion-icon>
+          <p>Home</p>
+        </div>
+      </ion-item>
+      <ion-item (click)="navigate(2)">
+        <div class="center-these">
+          <ion-icon name="accessibility-outline"></ion-icon>
+          <p>Add Policy Holder</p>
+        </div>
+      </ion-item>
+
+      <ion-item (click)="navigate(6)">
+        <div class="center-these">
+          <ion-icon name="camera-outline"></ion-icon>
+          <p>Add to Gallery</p>
+        </div>
+      </ion-item>
+      <ion-item (click)="navigate(3)">
+        <div class="center-these">
+          <ion-icon name="people-outline"></ion-icon>
+          <p>Members</p>
+        </div>
+      </ion-item>
+
+      <ion-item (click)="navigate(7)">
+        <div class="center-these">
+          <ion-icon name="phone-landscape-outline"></ion-icon>
+          <p>View Gallery</p>
+        </div>
+      </ion-item>
+
+      <ion-item (click)="navigate(4)" class="admin-active">
+        <div class="center-these">
+          <ion-icon name="color-palette-outline"></ion-icon>
+          <p>Deals</p>
+        </div>
+      </ion-item>
+      <ion-item (click)="navigate(5)">
+        <div class="center-these">
+          <ion-icon name="construct-outline"></ion-icon>
+          <p>Update Website / App</p>
+        </div>
+      </ion-item>
+      <ion-item (click)="navigate(0)">
+        <div class="center-these">
+          <ion-icon name="power-outline"></ion-icon>
+          <p>Logout</p>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet id="admin-site-deals"></ion-router-outlet>
+
+<ion-header>
+  <ion-toolbar class="admin-menus">
+    <ion-title slot="center">Packages</ion-title>
+    <ion-buttons slot="start" (click)="adminMenu('-site-deals')">
+      <ion-icon name="menu-outline" size="large"></ion-icon>
+    </ion-buttons>
+
+    <h4 style="margin-left: 40%">Packages</h4>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="admin-cover">
+  <br />
+  <div class="heading">
+    <h2>Plans we offer</h2>
+  </div>
+
+  <div class="deals">
+    <div class="single-deal">
+      <div class="img">
+        <img src="../../../../../assets/15942291.jpg" alt="" />
+      </div>
+      <div class="text">
+        <h5>Family Plan</h5>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est repellat
+          temporibus esse, consequuntur veniam possimus cum, quidem iusto fugiat
+          porro tenetur at? Neque suscipit ea deleniti atque accusantium, eaque
+          mollitia.
+        </p>
+        <i>R89 P/M</i>
+      </div>
+      <div class="btns">
+        <button class="update">
+          <i>update</i> <ion-icon name="hammer-outline"></ion-icon>
+        </button>
+        <button class="remove">
+          <i>remove</i> <ion-icon name="close-circle-outline"></ion-icon>
+        </button>
+      </div>
+    </div>
+
+    <div class="single-deal">
+      <div class="img">
+        <img src="../../../../../assets/abh.jpg" alt="" />
+      </div>
+      <div class="text">
+        <h5>Funeral Cover</h5>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est repellat
+          temporibus esse, consequuntur veniam possimus cum, quidem iusto fugiat
+          porro tenetur at? Neque suscipit ea deleniti atque accusantium, eaque
+          mollitia.
+        </p>
+        <i>R109 P/M</i>
+      </div>
+      <div class="btns">
+        <button class="update">
+          <i>update</i> <ion-icon name="hammer-outline"></ion-icon>
+        </button>
+        <button class="remove">
+          <i>remove</i> <ion-icon name="close-circle-outline"></ion-icon>
+        </button>
+      </div>
+    </div>
+
+    <div class="single-deal">
+      <div class="img">
+        <img src="../../../../../assets/gal5.jpg" alt="" />
+      </div>
+      <div class="text">
+        <h5>Premium Plan</h5>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est repellat
+          temporibus esse, consequuntur veniam possimus cum, quidem iusto fugiat
+          porro tenetur at? Neque suscipit ea deleniti atque accusantium, eaque
+          mollitia.
+        </p>
+        <i>R159 P/M</i>
+      </div>
+      <div class="btns">
+        <button class="update">
+          <i>update</i> <ion-icon name="hammer-outline"></ion-icon>
+        </button>
+        <button class="remove">
+          <i>remove</i> <ion-icon name="close-circle-outline"></ion-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+  <button class="add">
+    Add <ion-icon name="add-circle-outline"></ion-icon>
+  </button>
+</ion-content>

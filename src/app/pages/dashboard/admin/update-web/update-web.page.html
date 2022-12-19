@@ -1,0 +1,250 @@
+<ion-menu
+  side="start"
+  type="overlay"
+  menuId="adminMenu-site-update"
+  contentId="admin-site-update"
+>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title
+        ><center>
+          <img src="../../../../../assets/logo.PNG" alt="" /></center
+      ></ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item (click)="navigate(1)">
+        <div class="center-these">
+          <ion-icon name="home-outline"></ion-icon>
+          <p>Home</p>
+        </div>
+      </ion-item>
+      <ion-item (click)="navigate(2)">
+        <div class="center-these">
+          <ion-icon name="accessibility-outline"></ion-icon>
+          <p>Add Policy Holder</p>
+        </div>
+      </ion-item>
+
+      <ion-item (click)="navigate(6)">
+        <div class="center-these">
+          <ion-icon name="camera-outline"></ion-icon>
+          <p>Add to Gallery</p>
+        </div>
+      </ion-item>
+      <ion-item (click)="navigate(3)">
+        <div class="center-these">
+          <ion-icon name="people-outline"></ion-icon>
+          <p>Members</p>
+        </div>
+      </ion-item>
+
+      <ion-item (click)="navigate(7)">
+        <div class="center-these">
+          <ion-icon name="phone-landscape-outline"></ion-icon>
+          <p>View Gallery</p>
+        </div>
+      </ion-item>
+
+      <ion-item (click)="navigate(4)">
+        <div class="center-these">
+          <ion-icon name="color-palette-outline"></ion-icon>
+          <p>Deals</p>
+        </div>
+      </ion-item>
+      <ion-item (click)="navigate(5)" class="admin-active">
+        <div class="center-these">
+          <ion-icon name="construct-outline"></ion-icon>
+          <p>Update Website / App</p>
+        </div>
+      </ion-item>
+      <ion-item (click)="navigate(0)">
+        <div class="center-these">
+          <ion-icon name="power-outline"></ion-icon>
+          <p>Logout</p>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet id="admin-site-update"></ion-router-outlet>
+
+<ion-header>
+  <ion-toolbar class="admin-menus">
+    <ion-title slot="center">Update the site</ion-title>
+    <ion-buttons slot="start" (click)="adminMenu('-site-update')">
+      <ion-icon name="menu-outline" size="large"></ion-icon>
+    </ion-buttons>
+
+    <h4 style="margin-left: 40%">Update</h4>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="admin-cover">
+  <br /><br />
+  <div class="heading">
+    <h2>Change info for page :</h2>
+  </div>
+
+  <div class="chose">
+    <div class="single-choose single-active" id="ill" (click)="homePick()">
+      <p>Home Page</p>
+    </div>
+    <div class="single-choose" id="sill" (click)="contactick()">
+      <p>Contact</p>
+    </div>
+    <div
+      class="single-choose"
+      id="hill"
+      style="border-right: none"
+      (click)="abou6tPick()"
+    >
+      <p>About Us</p>
+    </div>
+  </div>
+
+  <div class="forms">
+    <div class="single-fomr-home">
+      <div class="form-area one" id="one">
+        <h3>Services</h3>
+
+        <div class="wrap">
+          <div class="office-wrap" id="off-wrap">
+            <div class="test-trr">
+              <div>
+                <ion-icon name="apps-outline"></ion-icon>
+              </div>
+              <input type="text" placeholder="Service Name" />
+            </div>
+
+            <p class="descrip">Description :</p>
+
+            <div class="test-trr">
+              <div>
+                <ion-icon name="lock-closed-outline"></ion-icon>
+              </div>
+              <textarea rows="10" placeholder="Description"> </textarea>
+            </div>
+
+            <div class="bottom-log">
+              <button (click)="goToAdmin()">Change</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-area two" id="two">
+        <h3>Contact</h3>
+
+        <div class="wrap">
+          <div class="office-wrap" id="off-wrap">
+            <div class="test-trr">
+              <div>
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+              <input type="text" placeholder="Phone No." />
+            </div>
+
+            <div class="test-trr">
+              <div>
+                <ion-icon name="compass-outline"></ion-icon>
+              </div>
+              <input type="text" placeholder="Location" />
+            </div>
+
+            <div class="test-trr">
+              <div>
+                <ion-icon name="mail-open-outline"></ion-icon>
+              </div>
+              <input type="text" placeholder="Email" />
+            </div>
+
+            <div class="test-trr">
+              <div>
+                <ion-icon name="logo-facebook"></ion-icon>
+              </div>
+              <input type="text" placeholder="Facebook Link" />
+            </div>
+
+            <div class="test-trr">
+              <div>
+                <ion-icon name="logo-twitter"></ion-icon>
+              </div>
+              <input type="text" placeholder="Twiiter Link" />
+            </div>
+
+            <div class="test-trr">
+              <div>
+                <ion-icon name="logo-instagram"></ion-icon>
+              </div>
+              <input type="text" placeholder="Instagram Link" />
+            </div>
+            <div class="bottom-log">
+              <button (click)="goToAdmin()">Change</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-area two" id="three">
+        <h3>History</h3>
+
+        <div class="wrap">
+          <div class="office-wrap" id="off-wrap">
+            <p class="descrip">Pick image :</p>
+            <div class="test-trr">
+              <div>
+                <ion-icon name="images-outline"></ion-icon>
+              </div>
+              <input type="file" placeholder="choose image to upload" />
+            </div>
+
+            <div class="test-trr">
+              <div>
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+              <input type="text" placeholder="date of the event" />
+            </div>
+          </div>
+        </div>
+        <hr style="background: #cd9833" />
+
+        <!-- ******************************************** -->
+
+        <h3>Members</h3>
+
+        <div class="wrap">
+          <div class="office-wrap" id="off-wrap">
+            <div class="test-trr">
+              <div>
+                <ion-icon name="person-outline"></ion-icon>
+              </div>
+              <input type="text" placeholder="member name" />
+            </div>
+            <p class="descrip">Pick image :</p>
+            <div class="test-trr">
+              <div>
+                <ion-icon name="images-outline"></ion-icon>
+              </div>
+              <input type="file" placeholder="choose image to upload" />
+            </div>
+
+            <p class="descrip">Quote :</p>
+
+            <div class="test-trr">
+              <div>
+                <ion-icon name="lock-closed-outline"></ion-icon>
+              </div>
+              <textarea rows="10" placeholder="Description"> </textarea>
+            </div>
+
+            <div class="bottom-log">
+              <button (click)="goToAdmin()">Change</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

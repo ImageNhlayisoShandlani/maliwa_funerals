@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="desktop-menu" (scroll)="onWindowScroll();">
+      <a class="logo">
+        <img src="../../../../assets/funeral.png" />
+      </a>
+
+      <ul>
+        <li (click)="home()">
+          <a>Home</a>
+        </li>
+        <li (click)="products()">
+          <a>Products</a>
+        </li>
+        <li (click)="gallery()">
+          <a>Gallery</a>
+        </li>
+        <li (click)="about()">
+          <a>About US</a>
+        </li>
+        <li (click)="contact()" class="active">
+          <a>Contact US</a>
+        </li>
+
+        <li (click)="admin()">
+          <a>Admin</a>
+        </li>
+      </ul>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="box-wrapper">
+  <div class="banner">
+    <div class="over-banner">
+      <div>
+        <p>Home / Contact US</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-area">
+    <div class="left">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577.567115601636!2d27.809544514688255!3d-26.275709273264813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95a44259966143%3A0x7aa9c9ccd07a406f!2sProtea%20Glen%20Mall!5e0!3m2!1sen!2sza!4v1634576850749!5m2!1sen!2sza"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+    <div class="right">
+      <h3>Leave us a message</h3>
+      <br />
+
+      <form>
+        <input type="text" placeholder="Full Name" /><br />
+        <input type="text" placeholder="Subject" /><br />
+        <textarea cols="30" rows="7" placeholder="Your Message"></textarea>
+        <br />
+        <button class="contact-btn">Send Message</button>
+      </form>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</ion-content>

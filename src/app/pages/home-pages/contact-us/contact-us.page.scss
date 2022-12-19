@@ -1,0 +1,193 @@
+.box-wrapper {
+  width: 100%;
+  height: fit-content;
+  .banner {
+    width: 100%;
+    height: 90vh;
+    background: url(../../../../assets/contact.jpg) no-repeat;
+    background-size: cover;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .over-banner {
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ddd;
+
+      #quote-below {
+        width: 26rem;
+        height: fit-content;
+        position: relative;
+
+        p {
+          color: #aaa;
+        }
+        i {
+          color: #cd9833;
+          font-size: 1.8rem;
+        }
+
+        p.name {
+          position: absolute;
+          left: 50%;
+          top: 95%;
+          color: #cd9833;
+          font-style: italic;
+          font-family: cursive;
+          font-size: 0.8 rem;
+        }
+      }
+    }
+  }
+
+  .contact-area {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+    .left,
+    .right {
+      width: 47%;
+      height: 95%;
+    }
+
+    .left {
+      iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      input {
+        width: 30rem;
+        height: 2rem;
+        border-radius: 12px;
+        margin-bottom: 1.5rem;
+      }
+
+      textarea {
+        width: 100%;
+        border-radius: 12px;
+      }
+
+      button {
+        margin-top: 1rem;
+        width: 7rem;
+        height: 2rem;
+        border-radius: 10px;
+        background: #3e4093;
+        color: #ddd;
+      }
+    }
+  }
+}
+
+@media (min-width: 350px) and (max-width: 500px) and (orientation: portrait) {
+  .contact-area {
+    height: 108vh !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+
+    .right,
+    .left {
+      width: 95% !important;
+      height: 50% !important;
+    }
+
+    input {
+      width: 22rem !important;
+    }
+  }
+}
+
+@media (min-width: 660px) and (max-width: 925px) and (orientation: landscape) {
+  .contact-area {
+    height: 110vh !important;
+
+    input {
+      width: 100% !important;
+    }
+  }
+}
+
+/********************************** sMALL TABLET VIEW ***********************************************/
+
+@media (min-width: 491px) and (max-width: 760px) and (orientation: portrait) {
+  .contact-area {
+    height: 108vh !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+
+    .left {
+      width: 97% !important;
+      height: 60% !important;
+    }
+  }
+}
+
+/******************* SMALL TABLET Landscape VIERW *****************************************/
+
+@media (min-width: 719px) and (max-width: 1020px) and (min-height: 500px) and (orientation: landscape) {
+  .left {
+    height: 80% !important;
+  }
+}
+
+/********************************** LARGE TABLET Portarit VIEW ***********************************************/
+@media (min-width: 761px) and (max-width: 920px) and (orientation: portrait) {
+  .contact-area {
+    height: 108vh !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+
+    .left {
+      width: 97% !important;
+      height: 60% !important;
+    }
+
+    .right {
+      width: 97% !important;
+      height: 39% !important;
+
+      form {
+        width: 100%;
+        height: 100%;
+
+        input {
+          width: 100% !important;
+          height: 4rem !important;
+        }
+      }
+    }
+  }
+}
+
+/********************************** LARGE TABLET Landscape VIEW ***********************************************/
+@media (min-width: 1020px) and (max-width: 1370px) and (min-height: 760px) and (orientation: landscape) {
+}
+
+/** DARK MODE SCREEN MEDIA QUERIS ***/
+
+@media (prefers-color-scheme: dark) {
+  input,
+  textarea {
+    background: #ddd !important;
+  }
+}

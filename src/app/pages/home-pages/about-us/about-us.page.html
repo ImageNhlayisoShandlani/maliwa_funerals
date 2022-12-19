@@ -1,0 +1,136 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="desktop-menu" (scroll)="onWindowScroll();">
+      <a class="logo">
+        <img src="../../../../assets/funeral.png" />
+      </a>
+
+      <ul>
+        <li (click)="home()">
+          <a>Home</a>
+        </li>
+        <li (click)="products()">
+          <a>Products</a>
+        </li>
+        <li (click)="gallery()">
+          <a>Gallery</a>
+        </li>
+        <li (click)="about()" class="active">
+          <a>About US</a>
+        </li>
+        <li (click)="contact()">
+          <a>Contact US</a>
+        </li>
+
+        <li (click)="admin()">
+          <a>Admin</a>
+        </li>
+      </ul>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="box-wrapper">
+  <div class="banner">
+    <div class="over-banner">
+      <div>
+        <p>Home / About Us</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="first-about-us">
+    <div class="heading">
+      <h2>Our History</h2>
+    </div>
+    <div class="history">
+      <div class="single-history">
+        <div class="img-div">
+          <img src="../../../../assets/one.jpg" alt="" />
+        </div>
+        <p>Founded In</p>
+        <i>1978</i>
+      </div>
+      <div class="dot-border"></div>
+      <div class="single-history">
+        <div class="img-div">
+          <img src="../../../../assets/two.jpg" alt="" />
+        </div>
+        <p>Opened our 2nd shop</p>
+        <i>1995</i>
+      </div>
+      <div class="dot-border"></div>
+      <div class="single-history">
+        <div class="img-div">
+          <img src="../../../../assets/15942291.jpg" alt="" />
+        </div>
+        <p>Franchised</p>
+        <i>2020</i>
+      </div>
+    </div>
+
+    <br /><br />
+    <div class="heading">
+      <h2>Our Members</h2>
+    </div>
+
+    <div class="members">
+      <div class="single-member">
+        <div class="bi">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            officiis necessitatibus adipisci velit iusto molestias voluptas
+            fugit earum, harum nesciunt illum facilis ratione minus ea!
+          </p>
+        </div>
+        <div class="member-pic">
+          <img src="../../../../assets/mane.jpg" alt="" />
+        </div>
+        <div class="details">
+          <h4>Peter Drury</h4>
+          <p>CEO MHHS</p>
+        </div>
+      </div>
+
+      <div class="flex-dot"></div>
+
+      <div class="single-member">
+        <div class="bi">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            officiis necessitatibus adipisci velit iusto molestias voluptas
+            fugit earum, harum nesciunt illum facilis ratione minus ea!
+          </p>
+        </div>
+        <div class="member-pic">
+          <img src="../../../../assets/profile.jpg" alt="" />
+        </div>
+        <div class="details">
+          <h4>Image Nhlayiso</h4>
+          <p>CFO MHHS</p>
+        </div>
+      </div>
+
+      <div class="flex-dot"></div>
+
+      <div class="single-member">
+        <div class="bi">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            officiis necessitatibus adipisci velit iusto molestias voluptas
+            fugit earum, harum nesciunt illum facilis ratione minus ea!
+          </p>
+        </div>
+        <div class="member-pic">
+          <img src="../../../../assets/mane.jpg" alt="" />
+        </div>
+        <div class="details">
+          <h4>Peter Drury</h4>
+          <p>CEO MHHS</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <app-footer></app-footer>
+</ion-content>

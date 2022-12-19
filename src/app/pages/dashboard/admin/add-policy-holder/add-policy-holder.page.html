@@ -1,0 +1,157 @@
+<ion-menu
+  side="start"
+  type="overlay"
+  menuId="adminMenu-site-addP"
+  contentId="admin-site-addP"
+>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title
+        ><center>
+          <img src="../../../../../assets/logo.PNG" alt="" /></center
+      ></ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item (click)="navigate(1)">
+        <div class="center-these">
+          <ion-icon name="home-outline"></ion-icon>
+          <p>Home</p>
+        </div>
+      </ion-item>
+      <ion-item (click)="navigate(2)" class="admin-active">
+        <div class="center-these">
+          <ion-icon name="accessibility-outline"></ion-icon>
+          <p>Add Policy Holder</p>
+        </div>
+      </ion-item>
+
+      <ion-item (click)="navigate(6)">
+        <div class="center-these">
+          <ion-icon name="camera-outline"></ion-icon>
+          <p>Add to Gallery</p>
+        </div>
+      </ion-item>
+      <ion-item (click)="navigate(3)">
+        <div class="center-these">
+          <ion-icon name="people-outline"></ion-icon>
+          <p>Members</p>
+        </div>
+      </ion-item>
+
+      <ion-item (click)="navigate(7)">
+        <div class="center-these">
+          <ion-icon name="phone-landscape-outline"></ion-icon>
+          <p>View Gallery</p>
+        </div>
+      </ion-item>
+
+      <ion-item (click)="navigate(4)">
+        <div class="center-these">
+          <ion-icon name="color-palette-outline"></ion-icon>
+          <p>Deals</p>
+        </div>
+      </ion-item>
+      <ion-item (click)="navigate(5)">
+        <div class="center-these">
+          <ion-icon name="construct-outline"></ion-icon>
+          <p>Update Website / App</p>
+        </div>
+      </ion-item>
+      <ion-item (click)="navigate(0)">
+        <div class="center-these">
+          <ion-icon name="power-outline"></ion-icon>
+          <p>Logout</p>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet id="admin-site-addP"></ion-router-outlet>
+
+<ion-header>
+  <ion-toolbar class="admin-menus">
+    <ion-title slot="center">Add new policy holder</ion-title>
+    <ion-buttons slot="start" (click)="adminMenu('-site-addP')">
+      <ion-icon name="menu-outline" size="large"></ion-icon>
+    </ion-buttons>
+
+    <h4 style="margin-left: 40%">Add new policy holder</h4>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="admin-cover">
+  <div class="form-area two" id="three">
+    <h3>Fill form to add</h3>
+
+    <div class="wrap">
+      <div class="office-wrap" id="off-wrap">
+        <div class="test-trr">
+          <div>
+            <ion-icon name="person-outline"></ion-icon>
+          </div>
+          <input type="text" placeholder="member full name" />
+        </div>
+
+        <div class="test-trr">
+          <div>
+            <ion-icon name="mail-outline"></ion-icon>
+          </div>
+          <input type="text" placeholder="email address" />
+        </div>
+
+        <div class="test-trr">
+          <div>
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+          <input type="text" placeholder="contact no." />
+        </div>
+
+        <div class="test-trr">
+          <div><ion-icon name="book-outline"></ion-icon></div>
+          <input type="text" placeholder="id number" />
+        </div>
+
+        <p class="descrip">Physical Address :</p>
+
+        <div class="test-trr">
+          <div>
+            <ion-icon name="book-outline"></ion-icon>
+          </div>
+          <textarea rows="10" placeholder="address"> </textarea>
+        </div>
+
+        <hr />
+        <div class="options">
+          <ion-list>
+            <ion-radio-group>
+              <ion-list-header>
+                <ion-label> Policy Type </ion-label>
+              </ion-list-header>
+
+              <ion-item>
+                <ion-label>Burial Cover</ion-label>
+                <ion-radio value="Burial"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>Family Plan.</ion-label>
+                <ion-radio value="Family"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>Insurance</ion-label>
+                <ion-radio value="Insurance"></ion-radio>
+              </ion-item>
+            </ion-radio-group>
+          </ion-list>
+        </div>
+        <div class="bottom-log">
+          <button (click)="goToAdmin()">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

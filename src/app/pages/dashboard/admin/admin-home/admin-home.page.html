@@ -1,0 +1,257 @@
+<ion-menu
+  side="start"
+  type="overlay"
+  menuId="adminMenu-site-home"
+  contentId="admin-site-home"
+>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title
+        ><center>
+          <img src="../../../../../assets/logo.PNG" alt="" /></center
+      ></ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item (click)="navigate(1)" class="admin-active">
+        <div class="center-these">
+          <ion-icon name="home-outline"></ion-icon>
+          <p>Home</p>
+        </div>
+      </ion-item>
+      <ion-item (click)="navigate(2)">
+        <div class="center-these">
+          <ion-icon name="accessibility-outline"></ion-icon>
+          <p>Add Policy Holder</p>
+        </div>
+      </ion-item>
+
+      <ion-item (click)="navigate(6)">
+        <div class="center-these">
+          <ion-icon name="camera-outline"></ion-icon>
+          <p>Add to Gallery</p>
+        </div>
+      </ion-item>
+      <ion-item (click)="navigate(3)">
+        <div class="center-these">
+          <ion-icon name="people-outline"></ion-icon>
+          <p>Members</p>
+        </div>
+      </ion-item>
+
+      <ion-item (click)="navigate(7)">
+        <div class="center-these">
+          <ion-icon name="phone-landscape-outline"></ion-icon>
+          <p>View Gallery</p>
+        </div>
+      </ion-item>
+
+      <ion-item (click)="navigate(4)">
+        <div class="center-these">
+          <ion-icon name="color-palette-outline"></ion-icon>
+          <p>Deals</p>
+        </div>
+      </ion-item>
+      <ion-item (click)="navigate(5)">
+        <div class="center-these">
+          <ion-icon name="construct-outline"></ion-icon>
+          <p>Update Website / App</p>
+        </div>
+      </ion-item>
+      <ion-item (click)="navigate(0)">
+        <div class="center-these">
+          <ion-icon name="power-outline"></ion-icon>
+          <p>Logout</p>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet id="admin-site-home"></ion-router-outlet>
+
+<ion-header>
+  <ion-toolbar class="admin-menus">
+    <ion-title slot="center">Admin-home</ion-title>
+    <ion-buttons slot="start" (click)="adminMenu('-site-home')">
+      <ion-icon name="menu-outline" size="large"></ion-icon>
+    </ion-buttons>
+
+    <h4 style="margin-left: 40%">Admin-home</h4>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="admin-cover">
+  <div class="home-personal">
+    <div class="info-one">
+      <div class="icon-div">
+        <ion-icon name="person-outline"></ion-icon>
+      </div>
+      <div class="text-div"><i>Image Shondlani</i></div>
+    </div>
+    <div class="info-one">
+      <div class="icon-div">
+        <ion-icon name="mail-outline"></ion-icon>
+      </div>
+      <div class="text-div"><i>nhlayiso@gmail.com </i></div>
+    </div>
+    <div class="info-one">
+      <div class="icon-div">
+        <ion-icon name="phone-portrait-outline"></ion-icon>
+      </div>
+      <div class="text-div"><i>072 468 1646</i></div>
+    </div>
+    <div class="info-one">
+      <div class="icon-div">
+        <ion-icon name="timer-outline"></ion-icon>
+      </div>
+
+      <div class="text-div">
+        <i>last acticity : 22-06-2020 18:35:21 P.M</i>
+      </div>
+    </div>
+  </div>
+
+  <br /><br /><br />
+
+  <div class="stats-div">
+    <div class="left-stat-admim">
+      <div class="single-admin">
+        <div class="left-single">
+          <h4>Members</h4>
+
+          <p>6845</p>
+
+          <i> Updated On : 11-12-22 </i>
+        </div>
+        <div class="right-single">
+          <div>
+            <ion-icon name="people-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+
+      <div class="single-admin">
+        <div class="left-single">
+          <h4>Events Hosted</h4>
+
+          <p>5461</p>
+
+          <i> Updated On : 11-12-22 </i>
+        </div>
+        <div class="right-single">
+          <div style="background: #cd9833">
+            <ion-icon name="calendar-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+
+      <div class="single-admin">
+        <div class="left-single">
+          <h4>Policy Holders</h4>
+
+          <p>6845</p>
+
+          <i> Updated On : 11-12-22 </i>
+        </div>
+        <div class="right-single">
+          <div style="background: red">
+            <ion-icon name="hand-left-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-stat-admin">
+      <div class="heading-there">
+        <h5>Pre3vious Months</h5>
+      </div>
+
+      <div class="body-div">
+        <div class="single-body-div">
+          <div class="month">
+            <p>Jan</p>
+          </div>
+          <div class="bar">
+            <div></div>
+          </div>
+          <div class="number">
+            <p>
+              4554 &nbsp;
+              <ion-icon name="arrow-down-outline" style="color: red"></ion-icon>
+              &nbsp; 9%
+            </p>
+          </div>
+        </div>
+
+        <div class="single-body-div">
+          <div class="month">
+            <p>Feb</p>
+          </div>
+          <div class="bar">
+            <div style="width: 53%; background: green"></div>
+          </div>
+          <div class="number">
+            <p>
+              8754 &nbsp;
+              <ion-icon name="arrow-down-outline" style="color: red"></ion-icon>
+              &nbsp; 15%
+            </p>
+          </div>
+        </div>
+
+        <div class="single-body-div">
+          <div class="month">
+            <p>Apr</p>
+          </div>
+          <div class="bar">
+            <div style="width: 40%; background: purple"></div>
+          </div>
+          <div class="number">
+            <p>
+              5656 &nbsp;
+              <ion-icon
+                name="arrow-forward-outline"
+                style="color: orange"
+              ></ion-icon>
+              &nbsp; 0%
+            </p>
+          </div>
+        </div>
+
+        <div class="single-body-div">
+          <div class="month">
+            <p>May</p>
+          </div>
+          <div class="bar">
+            <div style="width: 80%; background: rgb(29, 57, 68)"></div>
+          </div>
+          <div class="number">
+            <p>
+              6867 &nbsp;
+              <ion-icon name="arrow-up-outline" style="color: green"></ion-icon>
+              &nbsp; 10%
+            </p>
+          </div>
+        </div>
+
+        <div class="single-body-div">
+          <div class="month">
+            <p>June</p>
+          </div>
+          <div class="bar">
+            <div style="width: 10%; background: rgb(152, 180, 28)"></div>
+          </div>
+          <div class="number">
+            <p>
+              6867 &nbsp;
+              <ion-icon name="arrow-down-outline" style="color: red"></ion-icon>
+              &nbsp; 6%
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

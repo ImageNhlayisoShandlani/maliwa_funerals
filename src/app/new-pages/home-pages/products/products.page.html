@@ -1,0 +1,290 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="desktop-menu" (scroll)="onWindowScroll();">
+      <a class="logo">
+        <img src="../../../../assets/funeral.png" />
+      </a>
+
+      <ul>
+        <li (click)="home()">
+          <a>Home</a>
+        </li>
+        <li (click)="products()" class="active">
+          <a>Products</a>
+        </li>
+        <li (click)="gallery()">
+          <a>Gallery</a>
+        </li>
+        <li (click)="about()">
+          <a>About US</a>
+        </li>
+        <li (click)="contact()">
+          <a>Contact US</a>
+        </li>
+
+        <li (click)="admin()">
+          <a>Admin</a>
+        </li>
+      </ul>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="box-wrapper">
+  <h3 id="start">Shop By Category</h3>
+  <div class="products-nav">
+    <div class="left-pro">
+      <div class="chose">
+        <div class="single-choose single-active" id="ill" (click)="homePick()">
+          <p>TombStones</p>
+        </div>
+        <div class="single-choose" id="sill" (click)="contactick()">
+          <p>Caskets & Boxes</p>
+        </div>
+        <div
+          class="single-choose"
+          id="hill"
+          style="border-right: none"
+          (click)="abou6tPick()"
+        >
+          <p>Tents & Chairs</p>
+        </div>
+      </div>
+    </div>
+    <div class="right-pro">
+      <select name="" id="">
+        <option value="">Sort By : Default</option>
+        <option value="">Sort By : Name (A - Z (0 - 9))</option>
+        <option value="">Sort By : Name (Z - A (9 - 0))</option>
+        <option value="">Sort By : Price (Low - High)</option>
+        <option value="">Sort By : Price (High - Low)</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="products">
+    <div class="single-cat-wrap" id="tombs">
+      <div class="cat-heading"><h3>TombStones</h3></div>
+
+      <div class="products-div">
+        <div class="single-top-six" (click)="goToShop(2)">
+          <div class="photo">
+            <img src="../../../../assets/images (1).jpg" alt="" />
+          </div>
+          <div class="middle-top-five">
+            <div class="name">
+              <p>Tombstone&nbsp; <i>R</i>800</p>
+            </div>
+            <div class="d">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate, dolorum.
+              </p>
+            </div>
+          </div>
+          <div class="button-top-photo">
+            <button>Buy</button>
+          </div>
+        </div>
+
+        <div class="single-top-six">
+          <div class="photo">
+            <img src="../../../../assets/fast-hurae.jpg" alt="" />
+          </div>
+          <div class="middle-top-five">
+            <div class="name">
+              <p>Fast Hurse &nbsp; <i>R</i>2000</p>
+            </div>
+            <div class="d">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate, dolorum.
+              </p>
+            </div>
+          </div>
+          <div class="button-top-photo">
+            <button>Buy</button>
+          </div>
+        </div>
+
+        <div class="single-top-six">
+          <div class="photo">
+            <img src="../../../../assets/urn.jpg" alt="" />
+          </div>
+          <div class="middle-top-five">
+            <div class="name">
+              <p>Urn&nbsp; <i>R</i>500</p>
+            </div>
+            <div class="d">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptas temporibus modi magni voluptatem, fugit facilis?
+              </p>
+            </div>
+          </div>
+          <div class="button-top-photo">
+            <button>Buy</button>
+          </div>
+        </div>
+
+        <div class="single-top-six">
+          <div class="photo">
+            <img src="../../../../assets/urn.jpg" alt="" />
+          </div>
+          <div class="middle-top-five">
+            <div class="name">
+              <p>Urn&nbsp; <i>R</i>500</p>
+            </div>
+            <div class="d">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptas temporibus modi magni voluptatem, fugit facilis?
+              </p>
+            </div>
+          </div>
+          <div class="button-top-photo">
+            <button>Buy</button>
+          </div>
+        </div>
+
+        <div class="single-top-six">
+          <div class="photo">
+            <img src="../../../../assets/urn.jpg" alt="" />
+          </div>
+          <div class="middle-top-five">
+            <div class="name">
+              <p>Urn&nbsp; <i>R</i>500</p>
+            </div>
+            <div class="d">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptas temporibus modi magni voluptatem, fugit facilis?
+              </p>
+            </div>
+          </div>
+          <div class="button-top-photo">
+            <button>Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="single-cat-wrap" id="casks">
+      <div class="cat-heading"><h3>Caskets</h3></div>
+
+      <div class="products-div">
+        <div class="single-top-six">
+          <div class="photo">
+            <img src="../../../../assets/urn.jpg" alt="" />
+          </div>
+          <div class="middle-top-five">
+            <div class="name">
+              <p>Urn&nbsp; <i>R</i>500</p>
+            </div>
+            <div class="d">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptas temporibus modi magni voluptatem, fugit facilis?
+              </p>
+            </div>
+          </div>
+          <div class="button-top-photo">
+            <button>Buy</button>
+          </div>
+        </div>
+
+        <div class="single-top-six">
+          <div class="photo">
+            <img src="../../../../assets/urn.jpg" alt="" />
+          </div>
+          <div class="middle-top-five">
+            <div class="name">
+              <p>Urn&nbsp; <i>R</i>500</p>
+            </div>
+            <div class="d">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptas temporibus modi magni voluptatem, fugit facilis?
+              </p>
+            </div>
+          </div>
+          <div class="button-top-photo">
+            <button>Buy</button>
+          </div>
+        </div>
+
+        <div class="single-top-six">
+          <div class="photo">
+            <img src="../../../../assets/urn.jpg" alt="" />
+          </div>
+          <div class="middle-top-five">
+            <div class="name">
+              <p>Urn&nbsp; <i>R</i>500</p>
+            </div>
+            <div class="d">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptas temporibus modi magni voluptatem, fugit facilis?
+              </p>
+            </div>
+          </div>
+          <div class="button-top-photo">
+            <button>Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="single-cat-wrap" id="tents">
+      <div class="cat-heading"><h3>Tents & Chairs</h3></div>
+
+      <div class="products-div">
+        <div class="single-top-six">
+          <div class="photo">
+            <img src="../../../../assets/urn.jpg" alt="" />
+          </div>
+          <div class="middle-top-five">
+            <div class="name">
+              <p>Urn&nbsp; <i>R</i>500</p>
+            </div>
+            <div class="d">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptas temporibus modi magni voluptatem, fugit facilis?
+              </p>
+            </div>
+          </div>
+          <div class="button-top-photo">
+            <button>Buy</button>
+          </div>
+        </div>
+
+        <div class="single-top-six">
+          <div class="photo">
+            <img src="../../../../assets/urn.jpg" alt="" />
+          </div>
+          <div class="middle-top-five">
+            <div class="name">
+              <p>Urn&nbsp; <i>R</i>500</p>
+            </div>
+            <div class="d">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptas temporibus modi magni voluptatem, fugit facilis?
+              </p>
+            </div>
+          </div>
+          <div class="button-top-photo">
+            <button>Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="load-more">
+      <p>Load More</p>
+      <ion-icon name="refresh-circle-outline"></ion-icon>
+    </button>
+  </div>
+  <app-footer></app-footer>
+</ion-content>

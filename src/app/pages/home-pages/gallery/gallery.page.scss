@@ -1,0 +1,243 @@
+.box-wrapper {
+  width: 100%;
+  height: fit-content;
+  .banner {
+    width: 100%;
+    height: 90vh;
+    background: url(../../../../assets/abh.jpg) no-repeat;
+    background-size: cover;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .over-banner {
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ddd;
+
+      #quote-below {
+        width: 26rem;
+        height: fit-content;
+        position: relative;
+
+        p {
+          color: #aaa;
+        }
+        i {
+          color: #cd9833;
+          font-size: 1.8rem;
+        }
+
+        p.name {
+          position: absolute;
+          left: 50%;
+          top: 95%;
+          color: #cd9833;
+          font-style: italic;
+          font-family: cursive;
+          font-size: 0.8 rem;
+        }
+      }
+    }
+  }
+
+  .first-cluster {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+    .right,
+    .left {
+      width: 44%;
+      height: 99%;
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      .top-right,
+      .less-right {
+        width: 100%;
+        height: 45%;
+        margin-bottom: 1.5%;
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        div {
+          width: 100%;
+          height: 20%;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          flex-direction: row;
+          position: absolute;
+          bottom: 0.001rem;
+          background: rgba(41, 37, 15, 0.8);
+          color: #ccc;
+
+          p {
+            font-style: italic;
+            font-weight: 600;
+            font-family: cursive;
+          }
+
+          ion-icon {
+            color: #cd9833;
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+
+    .left {
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      div {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        position: absolute;
+        bottom: 0.001rem;
+        background: rgba(41, 37, 15, 0.8);
+        color: #ccc;
+
+        p {
+          font-style: italic;
+          font-weight: 600;
+          font-family: cursive;
+        }
+
+        ion-icon {
+          color: #cd9833;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 350px) and (max-width: 500px) and (orientation: portrait) {
+  .first-cluster {
+    height: fit-content !important;
+    flex-direction: column !important;
+
+    .right,
+    .left {
+      height: 100vh !important;
+      width: 98% !important;
+      margin-bottom: 1.5rem !important;
+    }
+  }
+}
+
+@media (min-width: 660px) and (max-width: 925px) and (orientation: landscape) {
+  .right {
+    p {
+      font-size: 0.7rem !important;
+    }
+
+    ion-icon {
+      font-size: 1.15rem !important;
+    }
+  }
+
+  .left div {
+    p {
+      font-size: 0.8rem !important;
+    }
+
+    ion-icon {
+      font-size: 1.2rem !important;
+    }
+  }
+}
+
+/********************************** sMALL TABLET VIEW ***********************************************/
+
+@media (min-width: 491px) and (max-width: 760px) and (orientation: portrait) {
+  .first-cluster {
+    height: fit-content !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+
+    .right {
+      width: 98% !important;
+      justify-content: center !important;
+      height: fit-content !important;
+
+      .top-right,
+      .less-right {
+        height: 45vh !important;
+      }
+    }
+
+    .left {
+      width: 98% !important;
+      height: fit-content !important;
+    }
+  }
+}
+
+/******************* SMALL TABLET Landscape VIERW *****************************************/
+
+@media (min-width: 719px) and (max-width: 1020px) and (min-height: 500px) and (orientation: landscape) {
+  .left {
+    height: 70% !important;
+  }
+}
+
+/********************************** LARGE TABLET Portarit VIEW ***********************************************/
+@media (min-width: 761px) and (max-width: 920px) and (orientation: portrait) {
+  .first-cluster {
+    height: fit-content !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+
+    .right {
+      width: 98% !important;
+      justify-content: center !important;
+      height: fit-content !important;
+
+      .top-right,
+      .less-right {
+        height: 45vh !important;
+      }
+    }
+
+    .left {
+      width: 98% !important;
+      height: fit-content !important;
+    }
+  }
+}
+
+/********************************** LARGE TABLET Landscape VIEW ***********************************************/
+@media (min-width: 1020px) and (max-width: 1370px) and (min-height: 760px) and (orientation: landscape) {
+  .left {
+    height: 80% !important;
+  }
+}

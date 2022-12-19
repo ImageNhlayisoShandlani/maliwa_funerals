@@ -1,0 +1,558 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import "~@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+/** ############## MENU STYLES HERE #################### */
+
+div.desktop-menu {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  background: #3e4093;
+  overflow-y: visible;
+  z-index: 9999984165165465;
+
+  .logo {
+    width: 8rem;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 60%;
+
+    li {
+      list-style: none;
+
+      a {
+        color: #fff;
+        cursor: pointer;
+        transition: ease-in 0.2s;
+      }
+
+      a:hover {
+        color: #cd9833;
+        font-size: 1.2rem;
+        font-family: cursive;
+      }
+    }
+
+    li.active {
+      a {
+        color: #cd9833;
+        font-size: 1.2rem;
+        font-family: cursive;
+        transition: ease-in 0.2s;
+      }
+
+      a:hover {
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .search-area {
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    flex-direction: row;
+
+    ion-button {
+      height: 2rem;
+      --background: #cd9833;
+      --border-radius: 1rem;
+    }
+
+    ion-input {
+      border: 1px #cd9833 solid;
+      --color: #ffff;
+      height: 2rem;
+      border-radius: 1rem;
+      margin-right: 1rem;
+    }
+  }
+}
+
+/** ############## Other Common styles STYLES HERE #################### */
+
+.heading {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  h2 {
+    font-family: Lucida Bright, Georgia, serif;
+  }
+
+  p {
+    font-style: italic;
+    font-family: cursive;
+
+    ion-icon {
+      color: #cd9833;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  height: 80vh;
+  // background: #111;
+  background: #111;
+  padding: 3rem;
+  margin-top: 3rem;
+
+  p {
+    font-style: italic;
+    color: rgb(184, 184, 184);
+  }
+  .footer-top {
+    width: 100%;
+    height: 15%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+
+    hr {
+      height: 1.5rem;
+    }
+
+    .foot-top-left {
+      width: 100%;
+      height: 100%;
+      color: #fff;
+
+      h3 {
+        font-weight: 700;
+        font-size: 1.3rem;
+        font-style: oblique;
+      }
+
+      p {
+        font-style: italic;
+        color: rgb(184, 184, 184);
+      }
+    }
+
+    .foot-top-right {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      input {
+        height: 3rem;
+        width: 18rem;
+        text-align: center;
+      }
+
+      button {
+        background: #cd9833;
+        color: black;
+        height: 3rem;
+        width: 7.5rem;
+      }
+    }
+  }
+
+  .foot-middle {
+    .search-area {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+
+      ion-button {
+        height: 2rem;
+        --background: #3e4093;
+        --border-radius: 1rem;
+      }
+
+      ion-input {
+        border: 1px #3e4093 solid;
+        --color: #ffff;
+        height: 2rem;
+        border-radius: 1rem;
+        margin-right: 1rem;
+      }
+    }
+    color: #fff;
+
+    h5 {
+      color: #fff;
+      font-size: 1.3rem;
+      font-weight: 500;
+
+      i {
+        color: #cd9833;
+        font-style: oblique;
+        font-weight: bolder;
+        font-size: 1.6rem;
+      }
+
+      .img-logo {
+        width: 10rem;
+        height: 4rem;
+      }
+    }
+
+    a {
+      margin-left: 2rem;
+      margin-right: 2rem;
+      font-size: 1.5rem;
+      cursor: pointer;
+
+      .face {
+        color: #4267b2;
+      }
+
+      .tweet {
+        color: #1da1f2;
+      }
+
+      .insta {
+        color: #e95950;
+      }
+    }
+  }
+
+  .fSocials {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    div {
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      a {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .middle {
+    div {
+      width: 100%;
+      height: 10rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding-left: 2.5rem;
+
+      a {
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-decoration: none;
+        cursor: pointer;
+        color: rgb(184, 184, 184);
+      }
+    }
+  }
+
+  .last-footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .right {
+    p {
+      ion-icon {
+        color: #cd9833;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+#y,
+#b {
+  font-size: 1.5rem;
+  color: #cd9833;
+}
+
+.admin-menus {
+  display: initial;
+  --background: #3e4093;
+
+  ion-title,
+  h4,
+  ion-icon {
+    color: #ccc;
+  }
+}
+
+.center-these {
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 0.8rem;
+
+  ion-icon {
+    font-size: 1.45rem;
+  }
+}
+ion-list p {
+  margin-left: 0.5rem;
+  font-size: 1.25rem;
+  font-style: italic;
+  font-family: cursive;
+}
+.admin-cover {
+  --background: rgb(178, 189, 207);
+}
+
+.admin-active {
+  --background: #3e4093;
+  color: #cd9833;
+  border-bottom: 2px solid #cd9833;
+
+  ion-icon {
+    color: #cd9833;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 525px) {
+  .admin-menus {
+    display: initial !important;
+    --background: #3e4093 !important;
+  }
+  #welcome-card {
+    height: 150vh !important;
+
+    ion-card-content {
+      grid-template-columns: 100% !important;
+      grid-template-rows: 50% 50% !important;
+    }
+
+    #text-wrap {
+      height: auto !important;
+    }
+
+    #contact-welcome {
+      display: grid !important;
+      grid-template-columns: 65% 35% !important;
+      grid-gap: 0.5rem !important;
+
+      button {
+        width: 100% !important;
+      }
+    }
+
+    img {
+      height: 75% !important;
+      margin-top: 12.5% !important;
+    }
+  }
+
+  .single-benefit-div {
+    height: 30vh !important;
+  }
+  #roles-div {
+    height: 250vh !important;
+    grid-template-columns: 100% !important;
+    margin-right: 0 !important;
+    margin-left: -4.5% !important;
+    grid-template-rows: 30% 30% 30% !important;
+    grid-gap: 2rem !important;
+  }
+
+  .counter-content {
+    display: initial !important;
+
+    .counter-box {
+      width: 100% !important;
+    }
+  }
+
+  #benefit-thing {
+    margin-left: 1rem !important;
+    margin-right: 0 !important;
+    ion-col {
+      flex: none !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  #testimonials {
+    ion-col {
+      flex: none !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+
+      .single-test img {
+        width: 30% !important;
+        height: 105px !important;
+      }
+    }
+  }
+
+  footer {
+    height: 150vh !important;
+
+    .footer-top {
+      grid-template-columns: 100% !important;
+      grid-template-rows: 100% !important;
+
+      button {
+        width: 100% !important;
+      }
+    }
+
+    .mid-foot {
+      ion-row {
+        display: grid !important;
+        height: 90% !important;
+        grid-template-columns: 100% !important;
+        grid-template-rows: 30% 40% 30% !important;
+        margin-bottom: -5rem !important;
+
+        .right {
+          margin-top: -5rem;
+          margin-bottom: 25rem !important;
+        }
+        .foot-wrap {
+          width: 100% !important;
+          height: 100% !important;
+        }
+
+        .foot-middle {
+          flex: none !important;
+          max-width: 100% !important;
+          width: 100% !important;
+
+          center {
+            width: 100% !important;
+            display: grid !important;
+            grid-template-columns: 30% 30% 30% !important;
+          }
+        }
+      }
+    }
+
+    body
+      > app-root
+      > ion-app
+      > ion-router-outlet
+      > app-home
+      > ion-content
+      > footer
+      > hr:nth-child(8) {
+      margin-top: -4rem !important;
+    }
+  }
+
+  .middle {
+    h5 {
+      text-align: center !important;
+      margin-top: 1rem !important;
+    }
+
+    div {
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      align-items: center;
+      padding-right: 2rem !important;
+    }
+  }
+}
+
+@media (min-width: 350px) and (max-width: 500px) and (orientation: portrait) {
+  ion-header {
+    display: none;
+  }
+
+  footer {
+    height: 189vh !important;
+  }
+}
+
+@media (min-width: 660px) and (max-width: 925px) and (orientation: landscape) {
+  ion-header {
+    display: none;
+  }
+  footer {
+    height: 130vh !important;
+    padding: 0 !important;
+  }
+}
+
+@media (min-width: 491px) and (max-width: 760px) and (orientation: portrait) {
+  ion-toolbar {
+    display: none !important;
+  }
+}
+
+/********************************** LARGE TABLET Portarit VIEW ***********************************************/
+@media (min-width: 761px) and (max-width: 920px) and (orientation: portrait) {
+  ion-toolbar {
+    display: none !important;
+  }
+}
+
+/********************************** LARGE TABLET Landscape VIEW ***********************************************/
+@media (min-width: 1020px) and (max-width: 1370px) and (min-height: 760px) and (orientation: landscape) {
+  ion-toolbar {
+    display: none !important;
+  }
+}

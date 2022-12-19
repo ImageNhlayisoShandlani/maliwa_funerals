@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="desktop-menu" (scroll)="onWindowScroll();">
+      <a class="logo">
+        <img src="../../../../assets/funeral.png" />
+      </a>
+
+      <ul>
+        <li (click)="home()">
+          <a>Home</a>
+        </li>
+        <li (click)="products()">
+          <a>Products</a>
+        </li>
+        <li (click)="gallery()">
+          <a>Gallery</a>
+        </li>
+        <li (click)="about()">
+          <a>About US</a>
+        </li>
+        <li (click)="contact()">
+          <a>Contact US</a>
+        </li>
+
+        <li (click)="admin()" class="active">
+          <a>Admin</a>
+        </li>
+      </ul>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="box-wrapper">
+  <div class="cover">
+    <div class="form-area">
+      <h3>Admin Login</h3>
+
+      <div class="wrap">
+        <div class="office-wrap" id="off-wrap">
+          <div class="test-trr">
+            <div>
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <input type="text" placeholder="Admin Email Address" />
+          </div>
+
+          <div class="test-trr">
+            <div>
+              <ion-icon name="lock-closed-outline"></ion-icon>
+            </div>
+            <input type="password" placeholder="Password" />
+          </div>
+
+          <div class="bottom-log">
+            <button (click)="goToAdmin()">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

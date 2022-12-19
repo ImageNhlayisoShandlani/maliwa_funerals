@@ -1,0 +1,143 @@
+ion-content.box-wrapper {
+  height: 100vh;
+  --background: #ddd;
+
+  .cover {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form-area {
+    margin-top: 1%;
+    width: 50%;
+    height: 60%;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    .wrap {
+      width: 100%;
+      height: 25%;
+
+      .office-wrap {
+        width: 100%;
+        height: 100%;
+
+        .test-trr {
+          width: 100%;
+          height: 100%;
+          display: grid;
+          padding: 1rem;
+          grid-template-columns: 15% 85%;
+
+          div,
+          input {
+            width: 100%;
+            height: 100%;
+            border: 1px solid #cd9833;
+            color: #cd9833;
+          }
+
+          input {
+            padding-left: 1.5rem;
+            font-size: 1.5rem;
+          }
+          div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #cd9833;
+            font-size: 1.5rem;
+            color: #fff;
+          }
+        }
+
+        .bottom-log {
+          width: 100%;
+          padding: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          button {
+            width: 6rem;
+            height: 3rem;
+            background: #3e4093;
+            border-radius: 8px;
+            border: 1.5px solid #3e4093;
+            color: #fff;
+            font-size: 1.03rem;
+            font-weight: bold;
+            margin-right: 1.5rem;
+          }
+
+          a {
+            color: #cd9833;
+          }
+        }
+      }
+    }
+
+    .clerk-wrap {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 350px) and (max-width: 500px) and (orientation: portrait) {
+  .form-area {
+    width: 96% !important;
+  }
+}
+
+@media (min-width: 660px) and (max-width: 925px) and (orientation: landscape) {
+  .form-area {
+    height: 85% !important;
+  }
+}
+
+/********************************** sMALL TABLET VIEW ***********************************************/
+
+@media (min-width: 491px) and (max-width: 760px) and (orientation: portrait) {
+  .form-area {
+    width: 90% !important;
+  }
+}
+
+/******************* SMALL TABLET Landscape VIERW *****************************************/
+@media (min-width: 719px) and (max-width: 1020px) and (min-height: 500px) and (orientation: landscape) {
+  .form-area {
+    width: 85% !important;
+  }
+}
+
+/********************************** LARGE TABLET Portarit VIEW ***********************************************/
+@media (min-width: 761px) and (max-width: 920px) and (orientation: portrait) {
+  .form-area {
+    width: 96% !important;
+  }
+}
+
+/********************************** LARGE TABLET Landscape VIEW ***********************************************/
+@media (min-width: 1020px) and (max-width: 1370px) and (min-height: 760px) and (orientation: landscape) {
+  .form-area {
+    width: 85% !important;
+  }
+}
+/** DARK MODE SCREEN MEDIA QUERIS ***/
+
+@media (prefers-color-scheme: dark) {
+  ion-content.box-wrapper {
+    --background: #111 !important;
+
+    .form-area {
+      background: #222 !important;
+    }
+  }
+}

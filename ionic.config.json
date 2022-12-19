@@ -1,0 +1,7 @@
+{
+  "name": "maliwa-hhs",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,133 @@
+<ion-menu
+  side="start"
+  type="overlay"
+  menuId="adminMenu-site-gal"
+  contentId="admin-site-gal"
+>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title
+        ><center>
+          <img src="../../../../../assets/logo.PNG" alt="" /></center
+      ></ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item (click)="navigate(1)">
+        <div class="center-these">
+          <ion-icon name="home-outline"></ion-icon>
+          <p>Home</p>
+        </div>
+      </ion-item>
+      <ion-item (click)="navigate(2)">
+        <div class="center-these">
+          <ion-icon name="accessibility-outline"></ion-icon>
+          <p>Add Policy Holder</p>
+        </div>
+      </ion-item>
+
+      <ion-item (click)="navigate(6)" class="admin-active">
+        <div class="center-these">
+          <ion-icon name="camera-outline"></ion-icon>
+          <p>Add to Gallery</p>
+        </div>
+      </ion-item>
+      <ion-item (click)="navigate(3)">
+        <div class="center-these">
+          <ion-icon name="people-outline"></ion-icon>
+          <p>Members</p>
+        </div>
+      </ion-item>
+
+      <ion-item (click)="navigate(7)">
+        <div class="center-these">
+          <ion-icon name="phone-landscape-outline"></ion-icon>
+          <p>View Gallery</p>
+        </div>
+      </ion-item>
+
+      <ion-item (click)="navigate(4)">
+        <div class="center-these">
+          <ion-icon name="color-palette-outline"></ion-icon>
+          <p>Deals</p>
+        </div>
+      </ion-item>
+      <ion-item (click)="navigate(5)">
+        <div class="center-these">
+          <ion-icon name="construct-outline"></ion-icon>
+          <p>Update Website / App</p>
+        </div>
+      </ion-item>
+      <ion-item (click)="navigate(0)">
+        <div class="center-these">
+          <ion-icon name="power-outline"></ion-icon>
+          <p>Logout</p>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet id="admin-site-gal"></ion-router-outlet>
+
+<ion-header>
+  <ion-toolbar class="admin-menus">
+    <ion-title slot="center">Add to Gallery</ion-title>
+    <ion-buttons slot="start" (click)="adminMenu('-site-gal')">
+      <ion-icon name="menu-outline" size="large"></ion-icon>
+    </ion-buttons>
+
+    <h4 style="margin-left: 40%">Add to Gallery</h4>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="admin-cover">
+  <div class="form-area two" id="three">
+    <h3>Add Image to Gallery</h3>
+
+    <div class="wrap">
+      <div class="office-wrap" id="off-wrap">
+        <div class="test-trr">
+          <div>
+            <ion-icon name="information-circle-outline"></ion-icon>
+          </div>
+          <input type="text" placeholder="Title" />
+        </div>
+
+        <div class="test-trr">
+          <div>
+            <ion-icon name="calendar-number-outline"></ion-icon>
+          </div>
+          <input type="text" placeholder="Date" />
+        </div>
+
+        <div class="test-trr">
+          <div>
+            <ion-icon name="time-outline"></ion-icon>
+          </div>
+          <input type="text" placeholder="time" />
+        </div>
+
+        <div class="test-trr">
+          <div><ion-icon name="location-outline"></ion-icon></div>
+          <input type="text" placeholder="place" />
+        </div>
+
+        <p class="descrip">Select Image :</p>
+
+        <div class="test-trr">
+          <div>
+            <ion-icon name="camera-outline"></ion-icon>
+          </div>
+          <input type="file" name="" id="" />
+        </div>
+
+        <hr />
+        <div class="bottom-log">
+          <button (click)="goToAdmin()">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

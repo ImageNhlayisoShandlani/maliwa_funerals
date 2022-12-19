@@ -1,0 +1,229 @@
+.my-members {
+  width: 96%;
+  margin-left: 2%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+
+  .single-member {
+    width: 100%;
+    height: 9vh;
+    margin-bottom: 1.23rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background: #cd9833;
+    border-radius: 10px;
+
+    .number,
+    .name,
+    .mail,
+    .packages,
+    .date {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    .number {
+      width: 7%;
+    }
+    .name {
+      width: 20%;
+    }
+    .ddate {
+      width: 25%;
+    }
+    .mail {
+      width: 28%;
+    }
+
+    .packages {
+      width: 20%;
+    }
+
+    .buttons {
+      width: 20%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: row;
+
+      .call {
+        button {
+          background: green;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          flex-direction: row;
+          width: 7.5rem;
+          height: 2rem;
+          color: #ccc;
+          border-radius: 5px;
+        }
+      }
+
+      .remove {
+        button {
+          background: red;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          flex-direction: row;
+          width: 7.5rem;
+          height: 2rem;
+          color: #ddd;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  .flip {
+    background: #999;
+  }
+}
+
+.load {
+  margin-left: 5%;
+  width: 12rem;
+  background: #3e4093;
+  color: #ddd;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  height: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.18rem;
+}
+
+@media (min-width: 350px) and (max-width: 500px) and (orientation: portrait) {
+  ion-header {
+    display: initial !important;
+
+    h4 {
+      margin-left: 3rem !important;
+    }
+  }
+
+  .my-members {
+    overflow-x: scroll !important;
+
+    .single-member {
+      width: 280vw !important;
+    }
+  }
+}
+
+@media (min-width: 660px) and (max-width: 925px) and (orientation: landscape) {
+  ion-header {
+    display: flex !important;
+  }
+
+  ion-toolbar {
+    display: flex !important;
+  }
+  ion-header {
+    h4 {
+      margin-left: 14rem !important;
+    }
+  }
+
+  .my-members {
+    overflow-x: scroll !important;
+
+    .single-member {
+      width: 180vw !important;
+    }
+  }
+}
+
+@media (min-width: 491px) and (max-width: 760px) and (orientation: portrait) {
+  ion-header {
+    display: flex !important;
+  }
+
+  ion-toolbar {
+    display: flex !important;
+  }
+  .my-members {
+    overflow-x: scroll !important;
+
+    .single-member {
+      width: 250vw !important;
+    }
+  }
+}
+
+/******************* SMALL TABLET Landscape VIERW *****************************************/
+
+@media (min-width: 719px) and (max-width: 1020px) and (min-height: 500px) and (orientation: landscape) {
+  ion-header {
+    display: flex !important;
+  }
+
+  ion-toolbar {
+    display: flex !important;
+  }
+
+  .my-members {
+    overflow-x: scroll !important;
+
+    .single-member {
+      width: 220vw !important;
+    }
+  }
+}
+
+/********************************** LARGE TABLET Portarit VIEW ***********************************************/
+@media (min-width: 761px) and (max-width: 920px) and (orientation: portrait) {
+  ion-header {
+    display: flex !important;
+  }
+
+  ion-toolbar {
+    display: flex !important;
+  }
+
+  .my-members {
+    overflow-x: scroll !important;
+
+    .single-member {
+      width: 200vw !important;
+    }
+  }
+}
+
+/********************************** LARGE TABLET Landscape VIEW ***********************************************/
+@media (min-width: 1020px) and (max-width: 1370px) and (min-height: 760px) and (orientation: landscape) {
+  ion-header {
+    display: flex !important;
+  }
+
+  ion-toolbar {
+    display: flex !important;
+  }
+
+  .my-members {
+    overflow-x: scroll !important;
+
+    .single-member {
+      width: 170vw !important;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  ion-content {
+    --background: #222 !important;
+  }
+}

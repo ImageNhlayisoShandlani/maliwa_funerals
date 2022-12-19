@@ -1,0 +1,194 @@
+.pic-guide {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-top: 2.5rem;
+
+  .single-pic {
+    height: 75vh;
+    width: 28%;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    border-radius: 12px;
+
+    .img-div {
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .text {
+      width: 100%;
+      height: 50%;
+      background: #eee;
+      position: absolute;
+      bottom: -10%;
+
+      .title,
+      .date-time,
+      .location,
+      .btns {
+        width: 100%;
+        padding-left: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+
+        ion-icon {
+          color: #3e4093;
+          font-size: 1.3rem;
+          margin-right: 1rem;
+        }
+      }
+
+      .btns {
+        justify-content: space-evenly;
+
+        button {
+          width: 6rem;
+          height: 1.5rem;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 350px) and (max-width: 500px) and (orientation: portrait) {
+  ion-header {
+    display: initial !important;
+
+    h4 {
+      margin-left: 3rem !important;
+    }
+  }
+
+  .pic-guide {
+    flex-wrap: wrap;
+
+    .single-pic {
+      width: 96% !important;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+@media (min-width: 660px) and (max-width: 925px) and (orientation: landscape) {
+  ion-toolbar {
+    display: flex !important;
+  }
+  ion-header {
+    display: flex !important;
+    h4 {
+      margin-left: 14rem !important;
+    }
+  }
+
+  .text {
+    height: 68% !important;
+    bottom: 0 !important;
+  }
+}
+
+@media (min-width: 491px) and (max-width: 760px) and (orientation: portrait) {
+  ion-header {
+    display: flex !important;
+  }
+
+  ion-toolbar {
+    display: flex !important;
+  }
+
+  .pic-guide {
+    flex-wrap: wrap;
+
+    .single-pic {
+      width: 90% !important;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+/******************* SMALL TABLET Landscape VIERW *****************************************/
+
+@media (min-width: 719px) and (max-width: 1020px) and (min-height: 500px) and (orientation: landscape) {
+  ion-header {
+    display: flex !important;
+  }
+
+  ion-toolbar {
+    display: flex !important;
+  }
+
+  .single-pic {
+    width: 31% !important;
+  }
+  .text {
+    height: 59% !important;
+
+    div {
+      padding-left: 0.1rem !important;
+    }
+  }
+}
+
+/********************************** LARGE TABLET Portarit VIEW ***********************************************/
+@media (min-width: 761px) and (max-width: 920px) and (orientation: portrait) {
+  ion-header {
+    display: flex !important;
+  }
+
+  ion-toolbar {
+    display: flex !important;
+  }
+
+  .pic-guide {
+    flex-wrap: wrap;
+
+    .single-pic {
+      width: 90% !important;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+/********************************** LARGE TABLET Landscape VIEW ***********************************************/
+@media (min-width: 1020px) and (max-width: 1370px) and (min-height: 760px) and (orientation: landscape) {
+  ion-header {
+    display: flex !important;
+  }
+
+  ion-toolbar {
+    display: flex !important;
+  }
+
+  .single-pic {
+    width: 31% !important;
+  }
+  .text {
+    height: 59% !important;
+
+    div {
+      padding-left: 0.1rem !important;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  ion-content {
+    --background: #111 !important;
+
+    .text {
+      background: #222 !important;
+    }
+  }
+}

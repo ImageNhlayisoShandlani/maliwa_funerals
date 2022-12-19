@@ -1,0 +1,165 @@
+<ion-menu
+  side="start"
+  type="overlay"
+  menuId="adminMenu-site-pal"
+  contentId="admin-site-pal"
+>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title
+        ><center>
+          <img src="../../../../../assets/logo.PNG" alt="" /></center
+      ></ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item (click)="navigate(1)">
+        <div class="center-these">
+          <ion-icon name="home-outline"></ion-icon>
+          <p>Home</p>
+        </div>
+      </ion-item>
+      <ion-item (click)="navigate(2)">
+        <div class="center-these">
+          <ion-icon name="accessibility-outline"></ion-icon>
+          <p>Add Policy Holder</p>
+        </div>
+      </ion-item>
+
+      <ion-item (click)="navigate(6)">
+        <div class="center-these">
+          <ion-icon name="camera-outline"></ion-icon>
+          <p>Add to Gallery</p>
+        </div>
+      </ion-item>
+      <ion-item (click)="navigate(3)">
+        <div class="center-these">
+          <ion-icon name="people-outline"></ion-icon>
+          <p>Members</p>
+        </div>
+      </ion-item>
+
+      <ion-item (click)="navigate(7)" class="admin-active">
+        <div class="center-these">
+          <ion-icon name="phone-landscape-outline"></ion-icon>
+          <p>View Gallery</p>
+        </div>
+      </ion-item>
+
+      <ion-item (click)="navigate(4)">
+        <div class="center-these">
+          <ion-icon name="color-palette-outline"></ion-icon>
+          <p>Deals</p>
+        </div>
+      </ion-item>
+      <ion-item (click)="navigate(5)">
+        <div class="center-these">
+          <ion-icon name="construct-outline"></ion-icon>
+          <p>Update Website / App</p>
+        </div>
+      </ion-item>
+      <ion-item (click)="navigate(0)">
+        <div class="center-these">
+          <ion-icon name="power-outline"></ion-icon>
+          <p>Logout</p>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet id="admin-site-pal"></ion-router-outlet>
+
+<ion-header>
+  <ion-toolbar class="admin-menus">
+    <ion-title slot="center">All Images</ion-title>
+    <ion-buttons slot="start" (click)="adminMenu('-site-pal')">
+      <ion-icon name="menu-outline" size="large"></ion-icon>
+    </ion-buttons>
+
+    <h4 style="margin-left: 40%">All Images</h4>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="admin-cover">
+  <div class="pic-guide">
+    <div class="single-pic">
+      <div class="img-div">
+        <img src="../../assets/gal5.jpg" alt="" />
+      </div>
+      <div class="text">
+        <div class="title">
+          <ion-icon name="aperture-outline"></ion-icon>
+          <p>A Pic Taken Back</p>
+        </div>
+        <div class="date-time">
+          <ion-icon name="time-outline"></ion-icon>
+          <p>17:57 CAT - 22 July 2021</p>
+        </div>
+
+        <div class="location">
+          <ion-icon name="location-outline"></ion-icon>
+          <p>2667 Protea Glen Ext.2 1818</p>
+        </div>
+
+        <div class="btns">
+          <button style="background: #cd9833">Edit</button>
+          <button style="background: red; color: white">Delete</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="single-pic">
+      <div class="img-div">
+        <img src="../../assets/gal5.jpg" alt="" />
+      </div>
+      <div class="text">
+        <div class="title">
+          <ion-icon name="aperture-outline"></ion-icon>
+          <p>A Pic Taken Back</p>
+        </div>
+        <div class="date-time">
+          <ion-icon name="time-outline"></ion-icon>
+          <p>17:57 CAT - 22 July 2021</p>
+        </div>
+
+        <div class="location">
+          <ion-icon name="location-outline"></ion-icon>
+          <p>2667 Protea Glen Ext.2 1818</p>
+        </div>
+
+        <div class="btns">
+          <button style="background: #cd9833">Edit</button>
+          <button style="background: red; color: white">Delete</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="single-pic">
+      <div class="img-div">
+        <img src="../../assets/gal5.jpg" alt="" />
+      </div>
+      <div class="text">
+        <div class="title">
+          <ion-icon name="aperture-outline"></ion-icon>
+          <p>A Pic Taken Back</p>
+        </div>
+        <div class="date-time">
+          <ion-icon name="time-outline"></ion-icon>
+          <p>17:57 CAT - 22 July 2021</p>
+        </div>
+
+        <div class="location">
+          <ion-icon name="location-outline"></ion-icon>
+          <p>2667 Protea Glen Ext.2 1818</p>
+        </div>
+
+        <div class="btns">
+          <button style="background: #cd9833">Edit</button>
+          <button style="background: red; color: white">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
