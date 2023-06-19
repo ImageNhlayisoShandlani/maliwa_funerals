@@ -15,7 +15,19 @@ const routes: Routes = [
   {
     path: 'get-policy',
     loadChildren: () => import('./home-pages/get-policy/get-policy.module').then( m => m.GetPolicyPageModule)
+  },  {
+    path: 'user-home',
+    loadChildren: () => import('./dashboard/user/user-home/user-home.module').then( m => m.UserHomePageModule)
+  },
+  {
+    path: 'user-account-details',
+    loadChildren: () => import('./dashboard/user/user-account-details/user-account-details.module').then( m => m.UserAccountDetailsPageModule)
+  },
+  {
+    path: 'user-history',
+    loadChildren: () => import('./dashboard/user/user-history/user-history.module').then( m => m.UserHistoryPageModule)
   }
+
 ];
 
 @NgModule({

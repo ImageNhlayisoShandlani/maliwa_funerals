@@ -1,0 +1,401 @@
+.home-personal {
+    width: 96%;
+    height: 25vh;
+    margin-top: 3rem;
+    margin-left: 2%;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  
+    .info-one {
+      width: 20%;
+      height: 60%;
+      border-right: #3e4093 1px solid;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: row;
+      padding-right: 15px;
+  
+      .icon-div,
+      .text-div {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      .icon-div {
+        width: 20%;
+        ion-icon {
+          color: #cd9833;
+          font-size: 2.5rem;
+        }
+      }
+  
+      .text-div {
+        width: 76%;
+      }
+    }
+  }
+  
+  .stats-div {
+    width: 96%;
+    margin-left: 2%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 5rem;
+  
+    .left-stat-admim {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: auto;
+  
+      .single-admin {
+        width: 30%;
+        height: 100%;
+        margin-bottom: 1.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        background: #eee;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+          rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        padding: 0.35rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+  
+        .left-single {
+          width: 70%;
+          height: 100%;
+          display: flex;
+          justify-content: flex-start;
+          flex-direction: column;
+        }
+  
+        .right-single {
+          width: 30%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+  
+          div {
+            width: 50%;
+            height: 35%;
+            background: fuchsia;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #eee;
+            border-radius: 10px;
+  
+            ion-icon {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  
+    .right-stat-admin {
+      width: 65%;
+      height: 125%;
+      background: #eee;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 15px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: italic;
+  
+      .heading-there {
+        width: 100%;
+        height: 8%;
+        margin-bottom: 2%;
+        margin-left: 2rem;
+      }
+  
+      .body-div {
+        width: 100%;
+        height: 80%;
+  
+        .single-body-div {
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          flex-direction: row;
+          padding-left: 0.5rem;
+          padding-right: 0.5rem;
+          margin-bottom: 2.5rem;
+  
+          .month {
+            width: 10%;
+            height: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-right: darkgray 3px solid;
+          }
+  
+          .bar {
+            width: 65%;
+            height: 2.5rem;
+            border-radius: 10px;
+            background: #777;
+            overflow: hidden;
+  
+            div {
+              width: 23%;
+              height: 100%;
+              background: #3e4093;
+              color: #3e4093;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media (min-width: 350px) and (max-width: 500px) and (orientation: portrait) {
+    ion-header {
+      display: initial !important;
+    }
+    .home-personal {
+      height: 85vh !important;
+      flex-direction: column !important;
+  
+      .info-one {
+        width: 96% !important;
+        border-bottom: 3px solid lightgrey;
+      }
+    }
+  
+    .stats-div {
+      height: 172vh !important;
+      flex-direction: column !important;
+  
+      .left-stat-admim {
+        width: 96% !important;
+        height: 40% !important;
+      }
+  
+      .right-stat-admin {
+        width: 98% !important;
+        height: 58% !important;
+      }
+    }
+  }
+  
+  @media (min-width: 660px) and (max-width: 925px) and (orientation: landscape) {
+    .home-personal {
+      height: 50vh !important;
+      flex-wrap: wrap;
+      overflow: hidden;
+  
+      .info-one {
+        width: 50% !important;
+        height: 50% !important;
+        border-right: none !important;
+        border-bottom: 1px solid #3e4093;
+      }
+    }
+  
+    .stats-div {
+      height: 144vh !important;
+  
+      .right-single div {
+        width: 75% !important;
+        height: 30% !important;
+      }
+    }
+  }
+  
+  /********************************** sMALL TABLET portrait VIEW ***********************************************/
+  
+  @media (min-width: 491px) and (max-width: 760px) and (orientation: portrait) {
+    ion-header {
+      display: flex !important;
+    }
+  
+    ion-toolbar {
+      display: flex !important;
+    }
+  
+    .home-personal {
+      height: 65vh !important;
+      flex-direction: column !important;
+  
+      .info-one {
+        width: 96% !important;
+        border-bottom: 3px solid lightgrey;
+        border-right: none !important;
+      }
+    }
+    .stats-div {
+      height: 150vh !important;
+      flex-direction: column !important;
+  
+      .left-stat-admim {
+        width: 96% !important;
+        height: 45% !important;
+      }
+  
+      .right-stat-admin {
+        width: 98% !important;
+        height: 52% !important;
+      }
+    }
+  }
+  
+  /******************* SMALL TABLET Landscape VIERW *****************************************/
+  
+  @media (min-width: 719px) and (max-width: 1020px) and (min-height: 500px) and (orientation: landscape) {
+    ion-header {
+      display: flex !important;
+    }
+  
+    ion-toolbar {
+      display: flex !important;
+    }
+  
+    .stats-div {
+      height: 190vh !important;
+      flex-direction: column !important;
+  
+      .right-single div {
+        height: 90% !important;
+      }
+  
+      .left-stat-admim {
+        width: 96% !important;
+        height: 45% !important;
+      }
+  
+      .right-stat-admin {
+        width: 98% !important;
+        height: 52% !important;
+      }
+    }
+  }
+  
+  /********************************** LARGE TABLET Portarit VIEW ***********************************************/
+  @media (min-width: 761px) and (max-width: 920px) and (orientation: portrait) {
+    ion-header {
+      display: flex !important;
+    }
+  
+    ion-toolbar {
+      display: flex !important;
+    }
+  
+    .home-personal {
+      height: 50vh !important;
+      flex-direction: column !important;
+  
+      .info-one {
+        width: 96% !important;
+        border-bottom: 3px solid lightgrey;
+        border-right: none !important;
+      }
+    }
+    .stats-div {
+      height: 150vh !important;
+      flex-direction: column !important;
+  
+      .right-single div {
+        height: 50% !important;
+  
+        ion-icon {
+          font-size: 41px !important;
+        }
+      }
+      .left-stat-admim {
+        width: 96% !important;
+        height: 45% !important;
+      }
+  
+      .right-stat-admin {
+        width: 98% !important;
+        height: 45% !important;
+      }
+    }
+  }
+  
+  /********************************** LARGE TABLET Landscape VIEW ***********************************************/
+  @media (min-width: 1020px) and (max-width: 1370px) and (min-height: 760px) and (orientation: landscape) {
+    ion-header {
+      display: flex !important;
+    }
+  
+    ion-toolbar {
+      display: flex !important;
+    }
+  
+    .home-personal {
+      height: 30vh !important;
+      flex-wrap: wrap;
+      overflow: hidden;
+  
+      .info-one {
+        width: 50% !important;
+        height: 50% !important;
+        border-right: none !important;
+        border-bottom: 1px solid #3e4093;
+      }
+    }
+    .stats-div {
+      height: 150vh !important;
+      flex-direction: column !important;
+  
+      .right-single div {
+        height: 55% !important;
+        ion-icon {
+          font-size: 35px !important;
+        }
+      }
+  
+      .left-stat-admim {
+        width: 96% !important;
+        height: 45% !important;
+      }
+  
+      .right-stat-admin {
+        width: 98% !important;
+        height: 52% !important;
+      }
+    }
+  }
+  
+  /** DARK MODE SCREEN MEDIA QUERIS ***/
+  
+  @media (prefers-color-scheme: dark) {
+    .admin-cover {
+      --background: #111 !important;
+    }
+  
+    .home-personal,
+    .single-admin,
+    .right-stat-admin {
+      background: #222 !important;
+    }
+  }
+  

@@ -20,6 +20,27 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'user-history',
+    loadChildren: () =>
+      import('./pages/dashboard/user/user-history/user-history.module').then(
+        (m) => m.UserHistoryPageModule
+      ),
+  },
+  {
+    path: 'user-home',
+    loadChildren: () =>
+      import('./pages/dashboard/user/user-home/user-home.module').then(
+        (m) => m.UserHomePageModule
+      ),
+  },
+  {
+    path: 'user-account',
+    loadChildren: () =>
+      import('./pages/dashboard/user/user-account-details/user-account-details.module').then(
+        (m) => m.UserAccountDetailsPageModule
+      ),
+  },
+  {
     path: 'login',
     loadChildren: () => import('./pages/home-pages/login/login.module').then( m => m.LoginPageModule)
   },

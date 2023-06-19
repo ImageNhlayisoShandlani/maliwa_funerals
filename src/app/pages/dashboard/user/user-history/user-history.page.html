@@ -1,0 +1,61 @@
+<ion-menu
+  side="start"
+  type="overlay"
+  menuId="userMenu-site-history"
+  contentId="user-site-history"
+>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title
+        ><center>
+          <img src="../../../../../assets/logo.PNG" alt="" /></center
+      ></ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item (click)="navigate(1)" >
+        <div class="center-these">
+          <ion-icon name="home-outline"></ion-icon>
+          <p>Profile</p>
+        </div>
+      </ion-item>
+      <ion-item (click)="navigate(2)" class="admin-active">
+        <div class="center-these">
+          <ion-icon name="accessibility-outline"></ion-icon>
+          <p>Account Details</p>
+        </div>
+      </ion-item>
+
+      <ion-item (click)="navigate(3)">
+        <div class="center-these">
+          <ion-icon name="camera-outline"></ion-icon>
+          <p>History</p>
+        </div>
+      </ion-item>
+
+      <ion-item (click)="navigate(0)">
+        <div class="center-these">
+          <ion-icon name="power-outline"></ion-icon>
+          <p>Logout</p>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet id="user-site-history"></ion-router-outlet>
+
+<ion-header>
+  <ion-toolbar class="admin-menus">
+    <ion-title slot="center">Transactional History</ion-title>
+    <ion-buttons slot="start" (click)="userMenu('-site-history')">
+      <ion-icon name="menu-outline" size="large"></ion-icon>
+    </ion-buttons>
+
+    <h4 style="margin-left: 40%">Transactional History</h4>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="admin-cover">
+
+</ion-content>
