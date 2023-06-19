@@ -14,7 +14,7 @@
   </ion-header>
   <ion-content>
     <ion-list>
-      <ion-item (click)="navigate(1)" >
+      <ion-item (click)="navigate(1)">
         <div class="center-these">
           <ion-icon name="home-outline"></ion-icon>
           <p>Profile</p>
@@ -48,7 +48,7 @@
 
 <ion-header>
   <ion-toolbar class="admin-menus">
-    <ion-title slot="center">Admin-home</ion-title>
+    <ion-title slot="center">Account</ion-title>
     <ion-buttons slot="start" (click)="userMenu('-site-account')">
       <ion-icon name="menu-outline" size="large"></ion-icon>
     </ion-buttons>
@@ -57,16 +57,15 @@
   </ion-toolbar>
 </ion-header>
 <ion-content class="user-home admin-cover">
-
   <div class="account-details-cover">
     <div class="account">
       <div class="top-account">
         <div class="left-account">
           <div class="icon-account">
-            <ion-icon name="time-outline"></ion-icon>
+            <ion-icon name="person"></ion-icon>
           </div>
           <div class="description-account">
-            <h3>Name : </h3>
+            <h3>Name</h3>
           </div>
         </div>
         <div class="right-account">
@@ -74,67 +73,66 @@
         </div>
       </div>
       <div class="body-account">
-
         <div class="single-body-account">
           <div class="left-account">
             <div class="icon-account">
-              <ion-icon name="time-outline"></ion-icon>
+              <ion-icon name="apps"></ion-icon>
             </div>
             <div class="description-account">
-              <h3>Name : </h3>
+              <h3>Acc No.</h3>
             </div>
           </div>
           <div class="right-account">
-            <p>Image Shandlani</p>
+            <p>2466674</p>
           </div>
         </div>
 
         <div class="single-body-account">
           <div class="left-account">
             <div class="icon-account">
-              <ion-icon name="time-outline"></ion-icon>
+              <ion-icon name="create"></ion-icon>
             </div>
             <div class="description-account">
-              <h3>Name : </h3>
+              <h3>Current PLan</h3>
             </div>
           </div>
           <div class="right-account">
-            <p>Image Shandlani</p>
+            <p>Full Cover</p>
           </div>
         </div>
 
         <div class="single-body-account">
           <div class="left-account">
             <div class="icon-account">
-              <ion-icon name="time-outline"></ion-icon>
+              <ion-icon name="card"></ion-icon>
             </div>
             <div class="description-account">
-              <h3>Name : </h3>
+              <h3>Payment Method</h3>
             </div>
           </div>
           <div class="right-account">
-            <p>Image Shandlani</p>
+            <p>Credit Card</p>
           </div>
         </div>
 
         <div class="single-body-account">
           <div class="left-account">
             <div class="icon-account">
-              <ion-icon name="time-outline"></ion-icon>
+              <ion-icon name="time"></ion-icon>
             </div>
             <div class="description-account">
-              <h3>Name : </h3>
+              <h3>Last Transaction</h3>
             </div>
           </div>
           <div class="right-account">
-            <p>Image Shandlani</p>
+            <p>16 June 2023</p>
           </div>
         </div>
       </div>
       <div class="actions-account">
-        <button>Update</button>
-        <button>Pause</button>
-        <button>Delete</button>
+        <button style="background: green">Update</button>
+        <button style="background: orange">Pause</button>
+        <button style="background: red">Delete</button>
       </div>
     </div>
   </div>

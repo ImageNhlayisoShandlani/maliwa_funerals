@@ -32,6 +32,10 @@ export class LoginPage implements OnInit {
     this.router.navigate(['admin-home']);
   }
 
+  goToAdmins() {
+    this.router.navigate(['user-home']);
+  }
+
   products() {
     this.router.navigate(['home/products']);
   }

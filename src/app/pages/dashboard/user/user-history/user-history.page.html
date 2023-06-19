@@ -14,20 +14,20 @@
   </ion-header>
   <ion-content>
     <ion-list>
-      <ion-item (click)="navigate(1)" >
+      <ion-item (click)="navigate(1)">
         <div class="center-these">
           <ion-icon name="home-outline"></ion-icon>
           <p>Profile</p>
         </div>
       </ion-item>
-      <ion-item (click)="navigate(2)" class="admin-active">
+      <ion-item (click)="navigate(2)">
         <div class="center-these">
           <ion-icon name="accessibility-outline"></ion-icon>
           <p>Account Details</p>
         </div>
       </ion-item>
 
-      <ion-item (click)="navigate(3)">
+      <ion-item (click)="navigate(3)" class="admin-active">
         <div class="center-these">
           <ion-icon name="camera-outline"></ion-icon>
           <p>History</p>
@@ -57,5 +57,49 @@
   </ion-toolbar>
 </ion-header>
 <ion-content class="admin-cover">
+  <div class="history-cover">
+    <div class="single-history">
+      <h4>16 June 2023</h4>
+      <p>Type : Payment</p>
+      <i>#46545sd65464</i><br /><br />
+      <a href="#">view more details</a>
+    </div>
 
+    <div class="single-history">
+      <h4>05 June 2023</h4>
+      <p>Type : Purchase</p>
+      <i>#5465s4d654tuq</i><br /><br />
+      <a href="#">view more details</a>
+    </div>
+
+    <div class="single-history">
+      <h4>15 May 2023</h4>
+      <p>Type : Payment</p>
+      <i>#pitpiwgti456541</i><br /><br />
+      <a href="#">view more details</a>
+    </div>
+
+    <div class="single-history">
+      <h4>25 April 2023</h4>
+      <p>Type : Purchase</p>
+      <i>#45456415fedsf</i><br /><br />
+      <a href="#">view more details</a>
+    </div>
+
+    <div class="single-history">
+      <h4>15 March 2023</h4>
+      <p>Type : Payment</p>
+      <i>#695546465saf</i><br /><br />
+      <a href="#">view more details</a>
+    </div>
+
+    <div class="single-history">
+      <h4>10 January 2023</h4>
+      <p>Type : Policy Claim</p>
+      <i>#98746541654yg</i><br /><br />
+      <a href="#">view more details</a>
+    </div>
+
+    <button>Load More</button>
+  </div>
 </ion-content>

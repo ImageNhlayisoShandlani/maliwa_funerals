@@ -1,0 +1,49 @@
+.history-cover {
+  width: 100%;
+  height: fit-content;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .single-history {
+    width: 40%;
+    height: 25vh;
+    background: #fff;
+    border-radius: 12px;
+    padding: 0 1rem 0 1rem;
+    margin-bottom: 1.5rem;
+
+    h4 {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
+
+    p {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    i {
+      color: rgb(110, 107, 107);
+    }
+  }
+
+  button {
+    width: 8rem;
+    height: 2rem;
+    border-radius: 12px;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 500px) and (orientation: portrait) {
+  .single-history {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 660px) and (max-width: 925px) and (orientation: landscape) {
+  .single-history {
+    width: 60% !important;
+    height: 45vh !important;
+  }
+}

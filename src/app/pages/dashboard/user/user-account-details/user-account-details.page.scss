@@ -1,123 +1,156 @@
-.user-home{
-    background: #eee;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.user-home {
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.account-details-cover{
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.account-details-cover {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    ion-icon{
-        color: #3e4093;
-        font-size: 2rem;
+  ion-icon {
+    color: #3e4093;
+    font-size: 2rem;
+  }
+
+  .account {
+    margin-top: 2.5rem;
+    background: #fff;
+    border-radius: 10px;
+    width: 45%;
+    padding: 1.5rem;
+    height: 80vh;
+
+    .top-account {
+      width: 100%;
+      height: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: row;
+
+      .left-account {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        ion-icon {
+          margin-right: 1.5rem;
+        }
+      }
+
+      .right-account {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .description-account {
+        width: 85%;
+        height: 100%;
+      }
     }
 
-    .account{
-        margin-top: 2.5rem;
-        background: #fff;
+    .body-account {
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      width: 100%;
+      height: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+
+      .single-body-account {
+        width: 100%;
+        height: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+
+        .left-account {
+          width: 50%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          flex-direction: row;
+
+          ion-icon {
+            margin-right: 1.5rem;
+          }
+          div {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+
+        .right-account {
+          width: 50%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+        }
+      }
+    }
+
+    .actions-account {
+      width: 100%;
+      height: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      button {
+        width: 8rem;
+        height: 2rem;
+        color: #fff;
         border-radius: 10px;
-        width: 45%;
-        padding: 1.5rem;
-        height: 80vh;
-
-        .top-account{
-            width: 100%;
-            height: 10%;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            flex-direction: row;
-
-            .left-account{
-                width: 30%;
-                height: 100%;
-                display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            flex-direction: row;
-            div{
-                height: 100%;
-                display: flex;
-            align-items: center;
-            justify-content: center;
-            }
-
-
-            }
-
-            .right-account{
-                width: 70%;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-            }
-
-            .description-account{
-                width: 85%;
-                height: 100%;
-            }
-        }
-
-        .body-account{
-            border-top: 1px solid black;
-            border-bottom: 1px solid black;
-            width: 100%;
-            height: 80%;
-
-            .single-body-account{
-                width: 100%;
-                height: 25%;
-
-                display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            flex-direction: row;
-
-
-            .left-account{
-                width: 30%;
-                height: 100%;
-                display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            flex-direction: row;
-            div{
-                height: 100%;
-                display: flex;
-            align-items: center;
-            justify-content: center;
-            }
-
-
-            }
-
-            .right-account{
-                width: 70%;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-            }
-            }
-        }
-
-        .actions-account{
-            width: 100%;
-            height: 10%;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-
-            button{
-                width: 8rem;
-                height: 2rem;
-            }
-        }
+      }
     }
+  }
+}
+
+@media (min-width: 350px) and (max-width: 500px) and (orientation: portrait) {
+  .account {
+    width: 95% !important;
+
+    button {
+      width: 6rem !important;
+    }
+  }
+}
+
+@media (min-width: 660px) and (max-width: 925px) and (orientation: landscape) {
+  .account {
+    width: 85% !important;
+    height: 122vh !important;
+  }
+}
+
+/********************************** sMALL TABLET portrait VIEW ***********************************************/
+
+@media (min-width: 491px) and (max-width: 760px) and (orientation: portrait) {
+  .account {
+    width: 98% !important;
+  }
+}
+
+/********************************** LARGE TABLET Portarit VIEW ***********************************************/
+@media (min-width: 761px) and (max-width: 920px) and (orientation: portrait) {
+  .account {
+    width: 80% !important;
+  }
 }
