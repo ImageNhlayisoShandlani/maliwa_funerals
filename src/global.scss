@@ -36,7 +36,7 @@ div.desktop-menu {
   flex-direction: row;
   padding-right: 1rem;
   padding-left: 1rem;
-  background: #3e4093;
+  background: #fff;
   overflow-y: visible;
   z-index: 9999984165165465;
 
@@ -62,9 +62,10 @@ div.desktop-menu {
       list-style: none;
 
       a {
-        color: #fff;
+        color: #3cbfd5;
         cursor: pointer;
         transition: ease-in 0.2s;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
 
       a:hover {
@@ -322,7 +323,7 @@ footer {
 
 .admin-menus {
   display: initial;
-  --background: #3e4093;
+  --background: #0b1c64;
 
   ion-title,
   h4,
@@ -355,7 +356,7 @@ ion-list p {
 }
 
 .admin-active {
-  --background: #3e4093;
+  --background: #0b1c64;
   color: #cd9833;
   border-bottom: 2px solid #cd9833;
 
