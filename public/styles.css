@@ -1413,7 +1413,7 @@ div.desktop-menu {
   flex-direction: row;
   padding-right: 1rem;
   padding-left: 1rem;
-  background: #3e4093;
+  background: #fff;
   overflow-y: visible;
   z-index: 9999984165165464;
 }
@@ -1437,9 +1437,10 @@ div.desktop-menu ul li {
   list-style: none;
 }
 div.desktop-menu ul li a {
-  color: #fff;
+  color: #3cbfd5;
   cursor: pointer;
   transition: ease-in 0.2s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 div.desktop-menu ul li a:hover {
   color: #cd9833;
@@ -1650,7 +1651,7 @@ footer .right p ion-icon {
 }
 .admin-menus {
   display: initial;
-  --background: #3e4093;
+  --background: #0b1c64;
 }
 .admin-menus ion-title,
 .admin-menus h4,
@@ -1679,7 +1680,7 @@ ion-list p {
   --background: rgb(178, 189, 207);
 }
 .admin-active {
-  --background: #3e4093;
+  --background: #0b1c64;
   color: #cd9833;
   border-bottom: 2px solid #cd9833;
 }
