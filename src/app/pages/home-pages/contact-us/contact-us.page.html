@@ -2,7 +2,7 @@
   <ion-toolbar>
     <div class="desktop-menu">
       <a class="logo">
-        <img src="../../../../assets/new-logos/GZX-01.png" />
+        <img src="../../../../assets/new-logos/GZX-01.jpg" />
       </a>
 
       <ul>
@@ -25,6 +25,13 @@
         <li (click)="admin()">
           <a>Admin</a>
         </li>
+
+        <div>
+          <ion-icon name="logo-whatsapp"></ion-icon>
+          <p>068 6465 2655</p>
+        </div>
+
+        <button (click)="getOffer()">Get Quote</button>
       </ul>
     </div>
   </ion-toolbar>
@@ -40,26 +47,74 @@
   </div>
 
   <div class="contact-area">
-    <div class="left">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577.567115601636!2d27.809544514688255!3d-26.275709273264813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95a44259966143%3A0x7aa9c9ccd07a406f!2sProtea%20Glen%20Mall!5e0!3m2!1sen!2sza!4v1634576850749!5m2!1sen!2sza"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-      ></iframe>
-    </div>
-    <div class="right">
-      <h3>Leave us a message</h3>
-      <br />
+    <div class="contact-wrap">
+      <div class="left">
+        <div class="single-contact">
+          <div class="icon">
+            <ion-icon name="logo-whatsapp"></ion-icon>
+          </div>
+          <h5>WhatsApp :</h5>
+          <p>065 845 1456</p>
+        </div>
 
-      <form>
-        <input type="text" placeholder="Full Name" /><br />
-        <input type="text" placeholder="Subject" /><br />
-        <textarea cols="30" rows="7" placeholder="Your Message"></textarea>
+        <div class="single-contact">
+          <div class="icon">
+            <ion-icon name="mail"></ion-icon>
+          </div>
+          <h5>Email :</h5>
+          <p>
+            mail@gzx.com <br />
+            gzx@gmail.com
+          </p>
+        </div>
+
+        <div class="single-contact">
+          <div class="icon">
+            <ion-icon name="location"></ion-icon>
+          </div>
+          <h5>Address :</h5>
+          <p>
+            6584 Komani Street <br />
+            Lakeview Extension 5 <br />
+            PO Box Pretoria 1820
+          </p>
+        </div>
+
+        <div class="single-contact">
+          <div class="icon">
+            <ion-icon name="call"></ion-icon>
+          </div>
+          <h5>Telephone & Fax :</h5>
+          <p>
+            (+27) 11 657 6846 <br />
+            (+27) 11 651 3249
+          </p>
+        </div>
+      </div>
+      <div class="right">
+        <h3>Leave us a message</h3>
         <br />
-        <button class="contact-btn">Send Message</button>
-      </form>
+
+        <form>
+          <input type="text" placeholder="Full Name" /><br />
+          <input type="text" placeholder="Email Address" /><br />
+          <input type="text" placeholder="Subject" /><br />
+          <textarea cols="30" rows="7" placeholder="Your Message"></textarea>
+          <br />
+          <button class="contact-btn">Send Message</button>
+        </form>
+      </div>
     </div>
+  </div>
+
+  <div class="map-area">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.0165794780955!2d-81.38642842457801!3d28.53922137571585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77afa51fbca55%3A0xf7c90b9225939190!2sAmway%20Center!5e0!3m2!1sen!2sza!4v1690792780010!5m2!1sen!2sza"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
   </div>
   <app-footer></app-footer>
 </ion-content>

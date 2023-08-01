@@ -75,6 +75,64 @@
     }
   }
 
+  .welcome-division {
+    margin-top: 14rem;
+    height: 45vh;
+    width: 100%;
+    padding: 3.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .welcome-heading,
+    .welcome-explain,
+    .welcome-icon {
+      width: 30%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h3 {
+        font-family: fangsong;
+        font-size: 2.2rem;
+
+        i {
+          color: #1da1f2;
+        }
+
+        strong {
+          color: #cd9833;
+        }
+      }
+
+      p {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        color: #555;
+        font-style: italic;
+      }
+    }
+
+    .welcome-icon {
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 16rem;
+        height: 16rem;
+        border: #cd9833 5px solid;
+        border-radius: 100%;
+        color: #cd9833;
+
+        ion-icon {
+          font-size: 3.5rem;
+        }
+      }
+    }
+  }
+
   /** ############## MIDDLE SECTION RIGHT HERE 
    +
    0. #################### */
@@ -97,6 +155,7 @@
     }
 
     .services {
+      margin-top: -5rem;
       flex-direction: row;
       justify-content: space-evenly;
       border-bottom: 1px #cd9833 solid;
@@ -161,7 +220,7 @@
       #left-pic,
       #second-description {
         width: 50%;
-        height: 75%;
+        height: 65%;
         display: flex;
         align-items: center;
       }
@@ -182,6 +241,44 @@
       #second-description {
         justify-content: center;
         flex-direction: column;
+        align-items: flex-start;
+
+        .icons-ultimate {
+          width: 100%;
+          height: fit-content;
+          margin-top: -3rem;
+          margin-bottom: 1rem;
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: row;
+
+          .single-iconsult {
+            width: 25%;
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: row;
+
+            div {
+              width: 2.5rem;
+              height: 2.5rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 50%;
+              background: transparent;
+              border: #cd9833 3px solid;
+              color: #cd9833;
+              margin-right: 0.45rem;
+
+              ion-icon {
+                font-size: 1.5rem;
+              }
+            }
+          }
+        }
 
         h2,
         p {
@@ -202,10 +299,7 @@
         }
 
         ion-button {
-          --background: transparent;
-          color: #0b1c64;
-          border: #0b1c64 2px solid;
-          border-radius: 10px;
+          --background: #0b1c64;
         }
       }
     }
@@ -217,6 +311,19 @@
     background: url(../../../../assets/static-area.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6rem;
+
+    .heading {
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      h2 {
+        color: #aaa;
+      }
+    }
 
     .cover-testimonials {
       width: 100%;
@@ -224,59 +331,62 @@
       background: rgba(0, 0, 0, 0.85);
       display: flex;
       align-items: center;
-      justify-content: center;
-      flex-direction: column;
-
-      .heading {
-        height: 10%;
-        h2 {
-          color: #aaa;
-        }
-      }
+      justify-content: space-around;
+      flex-direction: row;
+      flex-wrap: wrap;
 
       .single-testimony {
-        width: 80%;
-        height: 25%;
+        width: 45%;
+        height: 45%;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
-        flex-direction: row;
-        border-bottom: 2px solid #cd9833;
-        border-radius: 10px;
+        justify-content: center;
+        flex-direction: column;
+        border-left: 10px solid #0b1c64;
         margin-bottom: 1.2rem;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+        background: #fff;
+        padding: 1rem;
 
         .testimony-pic {
-          width: 30%;
-          height: 100%;
+          width: 100%;
+          height: 30%;
           display: flex;
           align-items: center;
           justify-content: center;
 
           img {
-            width: 28%;
-            height: 60%;
+            width: 15%;
+            height: 100%;
             border-radius: 50%;
+            border: #0b1c64 5px solid;
           }
         }
 
         .the-testimony {
-          width: 70%;
-          height: 100%;
+          width: 100%;
+          height: 70%;
           color: #eee;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
 
           h5 {
             font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
               sans-serif;
-            color: #ddd;
+            color: #000;
+            font-weight: bolder;
             font-style: italic;
           }
 
           #test-m {
-            color: #aaa;
+            color: #555;
+            font-style: italic;
           }
 
           #test-icon {
+            color: #333;
             ion-icon {
               color: #cd9833;
               font-size: 2rem;
@@ -530,6 +640,35 @@ footer {
 }
 
 @media (min-width: 350px) and (max-width: 500px) and (orientation: portrait) {
+  .welcome-division {
+    height: 100vh !important;
+    margin-top: -10rem !important;
+    flex-direction: column !important;
+
+    .welcome-heading,
+    .welcome-explain,
+    .welcome-icon {
+      width: 100% !important;
+      height: 32% !important;
+    }
+  }
+
+  .icons-ultimate {
+    margin-top: 1rem !important;
+
+    .single-iconsult {
+      div {
+        width: 1rem !important;
+        height: 1rem !important;
+        border-width: 1px !important;
+      }
+    }
+
+    p {
+      font-size: 0.7rem;
+      margin-top: 3rem;
+    }
+  }
   .banner {
     display: flex;
     align-items: center;
@@ -562,6 +701,10 @@ footer {
   .middle-home,
   .services {
     height: fit-content !important;
+  }
+
+  .middle-home {
+    margin-bottom: 6rem;
   }
 
   .services {
@@ -604,14 +747,23 @@ footer {
   }
 
   .testimonials {
-    height: fit-content;
+    height: fit-content !important;
+    margin-bottom: 3rem;
+    padding-bottom: 5rem;
 
     .single-testimony {
       width: 95% !important;
+      height: 45vh !important;
+
+      .testimony-pic {
+        width: 5rem !important;
+        height: 5rem !important;
+        border-width: 1px !important;
+      }
 
       img {
-        width: 90% !important;
-        height: 50% !important;
+        width: 100% !important;
+        height: 100% !important;
       }
     }
   }

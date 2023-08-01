@@ -1,8 +1,8 @@
 <ion-header>
   <ion-toolbar>
-    <div class="desktop-menu" (scroll)="onWindowScroll();">
+    <div class="desktop-menu">
       <a class="logo">
-        <img src="../../../../assets/new-logos/GZX-01.png" />
+        <img src="../../../../assets/new-logos/GZX-01.jpg" />
       </a>
 
       <ul>
@@ -25,6 +25,13 @@
         <li (click)="admin()">
           <a>Admin</a>
         </li>
+
+        <div>
+          <ion-icon name="logo-whatsapp"></ion-icon>
+          <p>068 6465 2655</p>
+        </div>
+
+        <button (click)="getOffer()">Get Quote</button>
       </ul>
     </div>
   </ion-toolbar>
@@ -64,10 +71,13 @@
 
   <div class="products">
     <div class="single-cat-wrap" id="tombs">
-      <div class="cat-heading"><h3>TombStones</h3></div>
+      <div class="cat-heading"><h3></h3></div>
+      <div class="heading">
+        <h2>TombStones</h2>
+      </div>
 
       <div class="products-div">
-        <div class="single-top-six" (click)="goToShop(2)">
+        <div class="single-top-six">
           <div class="photo">
             <img src="../../../../assets/images (1).jpg" alt="" />
           </div>
@@ -170,7 +180,9 @@
     </div>
 
     <div class="single-cat-wrap" id="casks">
-      <div class="cat-heading"><h3>Caskets</h3></div>
+      <div class="heading">
+        <h2>Caskets</h2>
+      </div>
 
       <div class="products-div">
         <div class="single-top-six">
@@ -236,9 +248,31 @@
     </div>
 
     <div class="single-cat-wrap" id="tents">
-      <div class="cat-heading"><h3>Tents & Chairs</h3></div>
+      <div class="heading">
+        <h2>Tents & Chairs</h2>
+      </div>
 
       <div class="products-div">
+        <div class="single-top-six">
+          <div class="photo">
+            <img src="../../../../assets/urn.jpg" alt="" />
+          </div>
+          <div class="middle-top-five">
+            <div class="name">
+              <p>Urn&nbsp; <i>R</i>500</p>
+            </div>
+            <div class="d">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptas temporibus modi magni voluptatem, fugit facilis?
+              </p>
+            </div>
+          </div>
+          <div class="button-top-photo">
+            <button>Buy</button>
+          </div>
+        </div>
+
         <div class="single-top-six">
           <div class="photo">
             <img src="../../../../assets/urn.jpg" alt="" />
@@ -285,6 +319,125 @@
       <p>Load More</p>
       <ion-icon name="refresh-circle-outline"></ion-icon>
     </button>
+
+    <div class="heading">
+      <h2>Cover & Packages</h2>
+    </div>
+
+    <div class="pakages">
+      <div class="single-pa">
+        <h3>Burials</h3>
+        <div class="checklist">
+          <div class="single-check">
+            <ion-icon name="checkmark-circle"></ion-icon>
+            <p>Buriel 1</p>
+          </div>
+
+          <div class="single-check">
+            <ion-icon name="checkmark-circle"></ion-icon>
+            <p>Buriel 2</p>
+          </div>
+
+          <div class="single-check">
+            <ion-icon name="checkmark-circle"></ion-icon>
+            <p>Buriel 3</p>
+          </div>
+
+          <div class="single-check">
+            <ion-icon name="checkmark-circle"></ion-icon>
+            <p>Buriel 4</p>
+          </div>
+
+          <div class="single-check">
+            <ion-icon name="checkmark-circle"></ion-icon>
+            <p>Buriel 5</p>
+          </div>
+        </div>
+        <p class="price">@ R100 P/M</p>
+        <button>Get Cover</button>
+      </div>
+
+      <div class="single-pa">
+        <h3>Memorials</h3>
+        <div class="checklist">
+          <div class="single-check">
+            <ion-icon name="checkmark-circle"></ion-icon>
+            <p>Memorial 1</p>
+          </div>
+
+          <div class="single-check">
+            <ion-icon name="checkmark-circle"></ion-icon>
+            <p>Memorial 2</p>
+          </div>
+
+          <div class="single-check">
+            <ion-icon name="checkmark-circle"></ion-icon>
+            <p>Memorial 3</p>
+          </div>
+
+          <div class="single-check">
+            <ion-icon name="checkmark-circle"></ion-icon>
+            <p>Memorial 4</p>
+          </div>
+        </div>
+        <p class="price">R125 P/M</p>
+        <button>Get Cover</button>
+      </div>
+
+      <div class="single-pa">
+        <h3>Funeral Cover</h3>
+        <div class="checklist">
+          <div class="single-check">
+            <ion-icon name="checkmark-circle"></ion-icon>
+            <p>Funeral Cover 1</p>
+          </div>
+
+          <div class="single-check">
+            <ion-icon name="checkmark-circle"></ion-icon>
+            <p>Funeral Cover 2</p>
+          </div>
+
+          <div class="single-check">
+            <ion-icon name="checkmark-circle"></ion-icon>
+            <p>Funeral Cover 3</p>
+          </div>
+
+          <div class="single-check">
+            <ion-icon name="checkmark-circle"></ion-icon>
+            <p>Funeral Cover 4</p>
+          </div>
+        </div>
+        <p class="price">@ R150 P/M</p>
+        <button>Get Cover</button>
+      </div>
+
+      <div class="single-pa">
+        <h3>The Ultimate</h3>
+        <div class="checklist">
+          <div class="single-check">
+            <ion-icon name="checkmark-circle"></ion-icon>
+            <p>Funeral Cover</p>
+          </div>
+
+          <div class="single-check">
+            <ion-icon name="checkmark-circle"></ion-icon>
+            <p>Buriel</p>
+          </div>
+
+          <div class="single-check">
+            <ion-icon name="checkmark-circle"></ion-icon>
+            <p>All - In - One</p>
+          </div>
+
+          <div class="single-check">
+            <ion-icon name="checkmark-circle"></ion-icon>
+            <p>Obituary</p>
+          </div>
+        </div>
+        <p class="price">@ R400 P/M</p>
+        <button>Get Cover</button>
+      </div>
+    </div>
   </div>
   <app-footer></app-footer>
 </ion-content>

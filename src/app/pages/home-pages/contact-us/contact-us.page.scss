@@ -49,71 +49,175 @@
 
   .contact-area {
     width: 100%;
-    height: 70vh;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row;
+    justify-content: center;
+    padding: 2.5rem;
 
-    .left,
-    .right {
-      width: 47%;
-      height: 95%;
-    }
-
-    .left {
-      iframe {
-        width: 100%;
-        height: 100%;
-        border-radius: 12px;
-      }
-    }
-
-    .right {
+    .contact-wrap {
+      width: 90%;
+      height: fit-content;
       display: flex;
       align-items: center;
-      justify-content: center;
-      flex-direction: column;
-
-      input {
-        width: 30rem;
-        height: 2rem;
-        border-radius: 12px;
-        margin-bottom: 1.5rem;
+      justify-content: space-between;
+      flex-direction: row;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+        rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      .left {
+        width: 35%;
+        height: 90vh;
       }
 
-      textarea {
-        width: 100%;
-        border-radius: 12px;
+      .right {
+        width: 65%;
+        height: 90vh;
+      }
+      .left {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        .single-contact {
+          width: 75%;
+          height: fit-content;
+          padding: 0.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+
+          div {
+            width: 3.5rem;
+            height: 3.5rem;
+            background: #0b1c64;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #cd9833;
+
+            ion-icon {
+              font-size: 1.5rem;
+            }
+          }
+
+          h5 {
+            margin-bottom: -0.5rem;
+            font-family: fangsong;
+            font-weight: bold;
+            color: #333;
+          }
+
+          p {
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+              sans-serif;
+            color: #777;
+            font-style: italic;
+          }
+        }
       }
 
-      button {
-        margin-top: 1rem;
-        width: 7rem;
-        height: 2rem;
-        border-radius: 10px;
-        background: #0b1c64;
-        color: #ddd;
+      .right {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        input {
+          width: 40rem;
+          height: 4rem;
+          margin-bottom: 1.5rem;
+          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+          color: #777;
+          font-style: italic;
+        }
+
+        textarea {
+          width: 40rem;
+          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+          color: #777;
+          font-style: italic;
+        }
+
+        button {
+          margin-top: 1rem;
+          width: 7rem;
+          height: 3rem;
+          background: #0b1c64;
+          color: #cd9833;
+        }
       }
+    }
+  }
+
+  .map-area {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    iframe {
+      width: 85%;
+      height: 75vh;
     }
   }
 }
 
 @media (min-width: 350px) and (max-width: 500px) and (orientation: portrait) {
   .contact-area {
-    height: 108vh !important;
+    height: 115vh !important;
     flex-direction: column !important;
     justify-content: center !important;
+    padding: 0.5rem !important;
+    margin-bottom: 2.5rem !important;
 
     .right,
     .left {
-      width: 95% !important;
-      height: 50% !important;
+      width: 100% !important;
     }
 
     input {
-      width: 22rem !important;
+      width: 94vw !important;
+      height: 2rem !important;
     }
+
+    textarea {
+      width: 100% !important;
+    }
+
+    .left {
+      height: 45% !important;
+    }
+    .right {
+      height: 55% !important;
+    }
+  }
+
+  .contact-wrap {
+    flex-direction: column !important;
+    width: 100% !important;
+    height: 100% !important;
+
+    .left {
+      flex-direction: row !important;
+      flex-wrap: wrap !important;
+      justify-content: space-evenly !important;
+
+      .single-contact {
+        width: 50% !important;
+        height: 50% !important;
+      }
+    }
+  }
+
+  iframe {
+    width: 95% !important;
+    height: 60vh !important;
   }
 }
 

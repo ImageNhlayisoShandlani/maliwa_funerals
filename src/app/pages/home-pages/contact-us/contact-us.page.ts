@@ -11,6 +11,9 @@ export class ContactUsPage implements OnInit {
 
   ngOnInit() {}
 
+  getOffer() {
+    this.router.navigate(['home/admin-landing']);
+  }
   admin() {
     this.router.navigate(['home/login']);
   }

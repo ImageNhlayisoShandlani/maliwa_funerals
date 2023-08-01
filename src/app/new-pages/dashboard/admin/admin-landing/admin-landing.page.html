@@ -1,13 +1,16 @@
 <ion-header>
   <ion-toolbar>
-    <div class="desktop-menu" (scroll)="onWindowScroll();">
+    <div class="desktop-menu">
       <a class="logo">
-        <img src="../../../../assets/funeral.png" />
+        <img src="../../../../assets/new-logos/GZX-01.jpg" />
       </a>
 
       <ul>
         <li (click)="home()">
           <a>Home</a>
+        </li>
+        <li (click)="products()">
+          <a>Products</a>
         </li>
         <li (click)="gallery()">
           <a>Gallery</a>
@@ -18,13 +21,14 @@
         <li (click)="contact()">
           <a>Contact US</a>
         </li>
+
         <li (click)="admin()">
           <a>Admin</a>
         </li>
 
-        <div class="search-area">
-          <ion-input placeholder="Type a keyword"></ion-input>
-          <ion-button>SEARCH</ion-button>
+        <div>
+          <ion-icon name="logo-whatsapp"></ion-icon>
+          <p>068 6465 2655</p>
         </div>
       </ul>
     </div>
@@ -34,7 +38,7 @@
 <ion-content class="box-wrapper">
   <div class="cover">
     <div class="form-area">
-      <h3>Complte form for policy application</h3>
+      <h3>Complete form for policy application</h3>
 
       <div class="wrap">
         <div class="office-wrap" id="off-wrap">
@@ -42,7 +46,7 @@
             <div>
               <ion-icon name="person-outline"></ion-icon>
             </div>
-            <input type="text" placeholder="Full" />
+            <input type="text" placeholder="Full Name" />
           </div>
 
           <div class="test-trr">
@@ -55,24 +59,24 @@
             <div>
               <ion-icon name="mail-outline"></ion-icon>
             </div>
-            <input type="text" placeholder="Admin Email Address" />
+            <input type="text" placeholder="Email Address" />
           </div>
 
-          <div class="test-trr">
-            <div>
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-            <input type="text" placeholder="Address" />
-          </div>
           <div class="test-trr">
             <div>
               <ion-icon name="lock-closed-outline"></ion-icon>
             </div>
             <input type="text" placeholder="ID No." />
           </div>
+          <div class="test-trr">
+            <div>
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <input type="text" placeholder="Address" />
+          </div>
 
           <div class="bottom-log">
-            <button (click)="goToAdmin()">Send Request</button>
+            <button (click)="apply()">Send Request</button>
           </div>
         </div>
       </div>

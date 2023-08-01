@@ -89,6 +89,25 @@ div.desktop-menu {
       }
     }
 
+    div {
+      margin-left: 1.5rem;
+      margin-right: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+
+      ion-icon {
+        color: #25d366;
+        margin-right: 0.8rem;
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-style: italic;
+        font-size: 0.85rem;
+      }
+    }
     button {
       background: #cd9833;
       height: 2rem;
@@ -128,11 +147,13 @@ div.desktop-menu {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3.5rem;
 
   h2 {
     font-family: Lucida Bright, Georgia, serif;
+    border-left: 5px solid #cd9833;
+    padding-left: 0.56rem;
   }
 
   p {

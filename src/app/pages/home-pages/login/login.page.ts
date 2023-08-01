@@ -11,6 +11,10 @@ export class LoginPage implements OnInit {
 
   ngOnInit() {}
 
+  getOffer() {
+    this.router.navigate(['home/admin-landing']);
+  }
+
   admin() {
     this.router.navigate(['home/login']);
   }

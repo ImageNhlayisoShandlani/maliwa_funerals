@@ -5,6 +5,79 @@
 .box-wrapper {
   width: 100%;
   height: fit-content;
+
+  .gallery-main {
+    width: 90%;
+    margin-left: 5%;
+    height: 75vh;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+    .left-gal-main-slide {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .right-gal-content {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .heading {
+        width: 100%;
+        height: 15%;
+
+        button {
+          background: #0b1c64;
+          padding: 1rem;
+          color: #ccc;
+        }
+      }
+
+      .content {
+        width: 85%;
+        height: 30%;
+      }
+
+      .main-icons {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        div {
+          padding: 0.75rem;
+          height: 100%;
+          display: flex;
+          align-self: center;
+          justify-content: center;
+          flex-direction: column;
+
+          ion-icon {
+            color: #cd9833;
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
   .banner {
     width: 100%;
     height: 90vh;
@@ -154,6 +227,27 @@
       height: 100vh !important;
       width: 98% !important;
       margin-bottom: 1.5rem !important;
+    }
+  }
+
+  .gallery-main {
+    width: 98% !important;
+    margin-left: 1% !important;
+    height: 90vh !important;
+    flex-direction: column !important;
+
+    .left-gal-main-slide {
+      width: 100% !important;
+      height: 40% !important;
+    }
+
+    .right-gal-content {
+      width: 100% !important;
+      height: 60% !important;
+
+      .main-icons {
+        height: 25% !important;
+      }
     }
   }
 }

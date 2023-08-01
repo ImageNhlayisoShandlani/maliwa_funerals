@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <div class="desktop-menu" (scroll)="onWindowScroll();">
+    <div class="desktop-menu">
       <a class="logo">
         <img src="../../../../assets/new-logos/GZX-01.jpg" />
       </a>
@@ -26,7 +26,12 @@
           <a>Admin</a>
         </li>
 
-        <button>Get Quote</button>
+        <div>
+          <ion-icon name="logo-whatsapp"></ion-icon>
+          <p>068 6465 2655</p>
+        </div>
+
+        <button (click)="getOffer()">Get Quote</button>
       </ul>
     </div>
   </ion-toolbar>
@@ -40,11 +45,11 @@
     <div class="over-banner">
       <div>
         <h3>GZX funeral Services :</h3>
-        <p>&dot; &nbsp; Get all your funeral services here</p>
-        <p>&dot; &nbsp; Get all your funeral services here</p>
-        <p>&dot; &nbsp; Get all your funeral services here</p>
-        <p>&dot; &nbsp; Get all your funeral services here</p>
-        <p>&dot; &nbsp; Get all your funeral services here</p>
+        <p>&dot; &nbsp; Bury Your Loved Ones</p>
+        <p>&dot; &nbsp; Affordable Funeral Services For All</p>
+        <p>&dot; &nbsp; Society Support</p>
+        <p>&dot; &nbsp; 24/Hour Claim Period</p>
+        <p>&dot; &nbsp; Trauma Counselling</p>
 
         <div id="quote-below">
           <p>
@@ -60,6 +65,30 @@
     </div>
   </div>
 
+  <div class="welcome-division">
+    <div class="welcome-heading">
+      <h3>
+        Welcome to <i>GZX Funeral & Buriel </i> Services, Here To Serve You and
+        Your People <strong>.....</strong>
+      </h3>
+    </div>
+
+    <div class="welcome-explain">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae vitae
+        omnis qui at soluta tempora suscipit eum doloremque recusandae
+        accusantium accusamus corrupti atque, totam provident quia magnam
+        consectetur neque fugit dolorum excepturi! Obcaecati quo expedita dolor
+        magnam repellat, eius fugiat?
+      </p>
+    </div>
+
+    <div class="welcome-icon">
+      <div>
+        <ion-icon name="expand"></ion-icon>
+      </div>
+    </div>
+  </div>
   <div class="heading">
     <h2>Services we offer</h2>
   </div>
@@ -74,7 +103,7 @@
             distinctio reiciendis natus.
           </p>
         </div>
-        <ion-button (click)="getOffer()">Get Now</ion-button>
+        <ion-button (click)="products()">Get Now</ion-button>
       </div>
 
       <div class="single-service">
@@ -87,7 +116,7 @@
             adipisicing elit. Obcaecati distinctio reiciendis natus.
           </p>
         </div>
-        <ion-button (click)="getOffer()">Get Now</ion-button>
+        <ion-button (click)="products()">Get Now</ion-button>
       </div>
 
       <div class="single-service">
@@ -100,7 +129,7 @@
             adipisicing elit. Obcaecati distinctio reiciendis natus.
           </p>
         </div>
-        <ion-button (click)="getOffer()">Get Now</ion-button>
+        <ion-button (click)="products()">Get Now</ion-button>
       </div>
 
       <div class="single-service">
@@ -113,7 +142,7 @@
             adipisicing elit. Obcaecati distinctio reiciendis natus.
           </p>
         </div>
-        <ion-button (click)="getOffer()">Get Now</ion-button>
+        <ion-button (click)="products()">Get Now</ion-button>
       </div>
     </div>
     <div class="second-banner">
@@ -123,6 +152,7 @@
           alt=""
         />
       </div>
+
       <div id="second-description">
         <h2>The Ultimate Pack</h2>
         <p>
@@ -130,6 +160,39 @@
           impedit veniam alias repellendus accusantium, harum quae fugit
           aspernatur a, excepturi animi facere. Sequi, consectetur minima!
         </p>
+
+        <div class="icons-ultimate">
+          <div class="single-iconsult">
+            <div>
+              <ion-icon name="checkmark-done"></ion-icon>
+            </div>
+
+            <p>Burial</p>
+          </div>
+          <div class="single-iconsult">
+            <div>
+              <ion-icon name="checkmark-done"></ion-icon>
+            </div>
+
+            <p>Memorials</p>
+          </div>
+
+          <div class="single-iconsult">
+            <div>
+              <ion-icon name="checkmark-done"></ion-icon>
+            </div>
+
+            <p>Funeral Cover</p>
+          </div>
+
+          <div class="single-iconsult">
+            <div>
+              <ion-icon name="checkmark-done"></ion-icon>
+            </div>
+
+            <p>Obituary</p>
+          </div>
+        </div>
         <ion-button (click)="getOffer()">Get Now</ion-button>
       </div>
     </div>
@@ -219,10 +282,32 @@
   <button (click)="take()">Huyr</button>
   -->
 
+  <div class="heading">
+    <h2>Testimonials</h2>
+  </div>
+
   <div class="testimonials">
     <div class="cover-testimonials">
-      <div class="heading">
-        <h2>Testimonials</h2>
+      <div class="single-testimony">
+        <div class="testimony-pic">
+          <img src="../../../../assets/profile.jpg" alt="" />
+        </div>
+        <div class="the-testimony">
+          <h5>Bhut MaJulie</h5>
+          <div class="testimony-text">
+            <p id="test-m">
+              " Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Reprehenderit quod explicabo praesentium sunt temporibus enim
+              corrupti cum cumque aliquid, eveniet ducimus asperiores maiores
+              tempore blanditiis laudantium? Esse perspiciatis rerum
+              blanditiis?"
+            </p>
+          </div>
+
+          <p id="test-icon">
+            <ion-icon name="time-outline"></ion-icon> &nbsp; 26 Fevruary 2020
+          </p>
+        </div>
       </div>
 
       <div class="single-testimony">
@@ -233,12 +318,14 @@
           <h5>Bhut MaJulie</h5>
           <div class="testimony-text">
             <p id="test-m">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              " Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Reprehenderit quod explicabo praesentium sunt temporibus enim
               corrupti cum cumque aliquid, eveniet ducimus asperiores maiores
-              tempore blanditiis laudantium? Esse perspiciatis rerum blanditiis?
+              tempore blanditiis laudantium? Esse perspiciatis rerum
+              blanditiis?"
             </p>
           </div>
+
           <p id="test-icon">
             <ion-icon name="time-outline"></ion-icon> &nbsp; 26 Fevruary 2020
           </p>

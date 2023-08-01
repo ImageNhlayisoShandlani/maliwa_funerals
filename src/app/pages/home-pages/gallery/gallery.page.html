@@ -1,8 +1,8 @@
 <ion-header>
   <ion-toolbar>
-    <div class="desktop-menu" (scroll)="onWindowScroll();">
+    <div class="desktop-menu">
       <a class="logo">
-        <img src="../../../../assets/new-logos/GZX-01.png" />
+        <img src="../../../../assets/new-logos/GZX-01.jpg" />
       </a>
 
       <ul>
@@ -25,6 +25,13 @@
         <li (click)="admin()">
           <a>Admin</a>
         </li>
+
+        <div>
+          <ion-icon name="logo-whatsapp"></ion-icon>
+          <p>068 6465 2655</p>
+        </div>
+
+        <button (click)="getOffer()">Get Quote</button>
       </ul>
     </div>
   </ion-toolbar>
@@ -39,9 +46,66 @@
     </div>
   </div>
 
+  <div class="gallery-main">
+    <swiper-container
+      class="left-gal-main-slide"
+      [loop]="true"
+      autoplay
+      effect="flip"
+      mousewheel-force-to-axis="true"
+    >
+      <swiper-slide>
+        <img src="../../../../assets/15942291.jpg" alt="" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="../../../../assets/gal3.jpg" alt="" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="../../../../assets/gal4.jpg" alt="" />
+      </swiper-slide>
+    </swiper-container>
+
+    <div class="right-gal-content">
+      <div class="heading">
+        <button>Latest Event</button>
+        <h2>Funeral For BK Khoza.</h2>
+        <p><ion-icon name="calendar-outline"></ion-icon> 23-25 MAY 2022</p>
+      </div>
+
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+          sapiente fugit velit accusantium officia, excepturi odio distinctio
+          necessitatibus sed corrupti vitae at fugiat earum cum est. Ab enim
+          voluptate nostrum!
+        </p>
+      </div>
+
+      <div class="main-icons">
+        <div class="single-icon-main">
+          <ion-icon name="person"></ion-icon>
+          <p>Khoza BK</p>
+        </div>
+        <div class="single-icon-main">
+          <ion-icon name="time"></ion-icon>
+          <p>10:30 A.M.</p>
+        </div>
+        <div class="single-icon-main">
+          <ion-icon name="location"></ion-icon>
+          <p>Soweto</p>
+        </div>
+        <div class="single-icon-main">
+          <ion-icon name="people"></ion-icon>
+          <p>250+</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <br /><br /><br /><br />
   <div class="heading">
-    <h2>From the last weekend</h2>
-    <p><ion-icon name="calendar-outline"></ion-icon> 23-25 MAY 2022</p>
+    <h2>From Our Archives</h2>
+    <p><ion-icon name="film"></ion-icon> Memories</p>
   </div>
 
   <div class="first-cluster">

@@ -26,10 +26,18 @@ export class AdminLandingPage implements OnInit {
   }
 
   gallery() {
-    this.router.navigate(['gallery']);
+    this.router.navigate(['home/gallery']);
   }
 
   getOffer() {
     this.router.navigate(['home/admin-landing']);
+  }
+
+  products() {
+    this.router.navigate(['home/products']);
+  }
+
+  apply() {
+    window.alert('Application Sent!!! \nAgents Will Be Contact With You');
   }
 }

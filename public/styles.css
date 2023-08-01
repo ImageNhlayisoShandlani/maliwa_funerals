@@ -1457,6 +1457,12 @@ div.desktop-menu ul li.active a:hover {
   color: #fff;
   cursor: pointer;
 }
+div.desktop-menu ul button {
+  background: #cd9833;
+  height: 2rem;
+  width: 6rem;
+  color: #fff;
+}
 div.desktop-menu .search-area {
   display: inherit;
   align-items: inherit;
