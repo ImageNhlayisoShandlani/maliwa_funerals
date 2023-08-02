@@ -11,8 +11,9 @@
   color: #eee;
 
   p {
-    font-style: oblique;
+    font-style: italic;
     color: #aaa;
+    font-family: Arial, Helvetica, sans-serif;
   }
   .head-foot {
     height: 15%;
@@ -25,10 +26,12 @@
     h2 {
       font-style: italic;
       font-weight: 700;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
     }
 
     h2.name {
-      color: #3cbfd5;
+      color: #1997bc;
     }
   }
 
@@ -128,11 +131,12 @@
 
       ion-button {
         height: 3rem;
-        --background: #0b1c64;
+        --background: #1997bc;
+        --border-radius: 0 !important;
       }
 
       ion-input {
-        border: 1px #0b1c64 solid;
+        border: 1px #1997bc solid;
         --color: #ffff;
         height: 3rem;
         margin-right: 1rem;

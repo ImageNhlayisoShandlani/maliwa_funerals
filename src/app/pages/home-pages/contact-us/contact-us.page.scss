@@ -30,7 +30,7 @@
           color: #aaa;
         }
         i {
-          color: #cd9833;
+          color: #bc3e19;
           font-size: 1.8rem;
         }
 
@@ -38,9 +38,9 @@
           position: absolute;
           left: 50%;
           top: 95%;
-          color: #cd9833;
+          color: #bc3e19;
           font-style: italic;
-          font-family: cursive;
+          font-family: Arial, Helvetica, sans-serif;
           font-size: 0.8 rem;
         }
       }
@@ -90,12 +90,12 @@
           div {
             width: 3.5rem;
             height: 3.5rem;
-            background: #0b1c64;
+            background: #1997bc;
             border-radius: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #cd9833;
+            color: #fff;
 
             ion-icon {
               font-size: 1.5rem;
@@ -104,14 +104,14 @@
 
           h5 {
             margin-bottom: -0.5rem;
-            font-family: fangsong;
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+              sans-serif;
             font-weight: bold;
-            color: #333;
+            color: #bc3e19;
           }
 
           p {
-            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-              sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             color: #777;
             font-style: italic;
           }
@@ -128,16 +128,14 @@
           width: 40rem;
           height: 4rem;
           margin-bottom: 1.5rem;
-          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-            sans-serif;
+          font-family: Arial, Helvetica, sans-serif;
           color: #777;
           font-style: italic;
         }
 
         textarea {
           width: 40rem;
-          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-            sans-serif;
+          font-family: Arial, Helvetica, sans-serif;
           color: #777;
           font-style: italic;
         }
@@ -146,8 +144,9 @@
           margin-top: 1rem;
           width: 7rem;
           height: 3rem;
-          background: #0b1c64;
-          color: #cd9833;
+          background: #354461;
+          color: #eee;
+          font-family: Arial, Helvetica, sans-serif;
         }
       }
     }

@@ -1,5 +1,5 @@
 .heading p ion-icon {
-  color: #0b1c64;
+  color: #354461;
 }
 
 .box-wrapper {
@@ -44,9 +44,9 @@
         height: 15%;
 
         button {
-          background: #0b1c64;
+          background: #1997bc;
           padding: 1rem;
-          color: #ccc;
+          color: #fff;
         }
       }
 
@@ -70,8 +70,14 @@
           justify-content: center;
           flex-direction: column;
 
+          p {
+            font-weight: bold;
+            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+
           ion-icon {
-            color: #cd9833;
+            color: #bc3e19;
             font-size: 1.5rem;
           }
         }
@@ -107,7 +113,7 @@
           color: #aaa;
         }
         i {
-          color: #cd9833;
+          color: #bc3e19;
           font-size: 1.8rem;
         }
 
@@ -115,9 +121,9 @@
           position: absolute;
           left: 50%;
           top: 95%;
-          color: #cd9833;
+          color: #bc3e19;
           font-style: italic;
-          font-family: cursive;
+          font-family: Arial, Helvetica, sans-serif;
           font-size: 0.8 rem;
         }
       }
@@ -172,11 +178,11 @@
           p {
             font-style: italic;
             font-weight: 600;
-            font-family: cursive;
+            font-family: Arial, Helvetica, sans-serif;
           }
 
           ion-icon {
-            color: #cd9833;
+            color: #bc3e19;
             font-size: 1.5rem;
           }
         }
@@ -205,11 +211,11 @@
         p {
           font-style: italic;
           font-weight: 600;
-          font-family: cursive;
+          font-family: Arial, Helvetica, sans-serif;
         }
 
         ion-icon {
-          color: #cd9833;
+          color: #bc3e19;
           font-size: 1.5rem;
         }
       }
