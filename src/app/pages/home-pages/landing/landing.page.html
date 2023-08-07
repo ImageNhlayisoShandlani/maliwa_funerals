@@ -12,9 +12,12 @@
         <li (click)="products()">
           <a>Products</a>
         </li>
+
+        <!--
         <li (click)="gallery()">
           <a>Gallery</a>
         </li>
+      -->
         <li (click)="about()">
           <a>About US</a>
         </li>
@@ -39,6 +42,7 @@
 
 <ion-content class="box-wrapper">
   <div class="banner">
+    <!--
     <div class="pic-back">
       <img src="../../../../assets/promo.jpg" alt="" />
     </div>
@@ -64,6 +68,38 @@
         </div>
       </div>
     </div>
+    -->
+
+    <div class="the-wrapper">
+      <div class="top-of-banner">
+        <h3>GZX funeral Services :</h3>
+        <p>&dot; &nbsp; Bury Your Loved Ones</p>
+        <p>&dot; &nbsp; Affordable Funeral Services For All</p>
+        <p>&dot; &nbsp; Society Support</p>
+        <p>&dot; &nbsp; 24/Hour Claim Period</p>
+        <p>&dot; &nbsp; Trauma Counselling</p>
+
+        <div id="quote-below">
+          <p>
+            <i>"</i>
+            Serving families is our passion, our commitment and our expertise.
+            Whether you’re planning a funeral or cremation service for a loved
+            one, or making your own arrangements in advance, meaningful life
+            celebrations begin with GZX FUNERALS
+            <i>"</i>
+          </p>
+          <p class="name">Jordan P Baloyi</p>
+        </div>
+      </div>
+
+      <div class="bottom-of-banner">
+        <swiper-container [loop]="true" autoplay effect="coverflow">
+          <swiper-slide>We availabe in three provinces</swiper-slide>
+          <swiper-slide>Our team will get back with a quote</swiper-slide>
+          <swiper-slide>register to enjoy all benefits</swiper-slide>
+        </swiper-container>
+      </div>
+    </div>
   </div>
 
   <div class="welcome-division">
@@ -86,7 +122,10 @@
 
     <div class="welcome-icon">
       <div>
-        <ion-icon name="expand"></ion-icon>
+        <img
+          src="../../../../assets/new-logos/BLACK N WHITE alternative/GZX-02.png"
+          alt=""
+        />
       </div>
     </div>
   </div>
@@ -100,8 +139,8 @@
         <div class="heading-service"><h5>Burials</h5></div>
         <div class="description">
           <p>
-            ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
-            distinctio reiciendis natus.
+            Get buriel cover now for less, cover any number of family members.
+            Claim within 24 hours hassle free and transparent
           </p>
         </div>
         <ion-button (click)="products()">Get Now</ion-button>
@@ -112,9 +151,8 @@
         <div class="heading-service"><h5>Memorials</h5></div>
         <div class="description">
           <p>
-            ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
-            distinctio reiciendis natus, ipsum dolor sit amet, consectetur
-            adipisicing elit. Obcaecati distinctio reiciendis natus.
+            Get buriel cover now for less, cover any number of family members.
+            Claim within 24 hours hassle free and transparent
           </p>
         </div>
         <ion-button (click)="products()">Get Now</ion-button>
@@ -125,9 +163,8 @@
         <div class="heading-service"><h5>Funeral Cover</h5></div>
         <div class="description">
           <p>
-            ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
-            distinctio reiciendis natus, ipsum dolor sit amet, consectetur
-            adipisicing elit. Obcaecati distinctio reiciendis natus.
+            Get buriel cover now for less, cover any number of family members.
+            Claim within 24 hours hassle free and transparent
           </p>
         </div>
         <ion-button (click)="products()">Get Now</ion-button>
@@ -138,14 +175,24 @@
         <div class="heading-service"><h5>Obituary</h5></div>
         <div class="description">
           <p>
-            ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
-            distinctio reiciendis natus, ipsum dolor sit amet, consectetur
-            adipisicing elit. Obcaecati distinctio reiciendis natus.
+            Get buriel cover now for less, cover any number of family members.
+            Claim within 24 hours hassle free and transparent
           </p>
         </div>
         <ion-button (click)="products()">Get Now</ion-button>
       </div>
     </div>
+
+    <div class="mid-quote">
+      <div>
+        <h3>
+          It is importatnt for us as africans to give our loved ones a dignified
+          funeral for them to never be forgetten.
+        </h3>
+        <p>- Image Shondlani</p>
+      </div>
+    </div>
+
     <div class="second-banner">
       <div id="left-pic">
         <img
@@ -157,9 +204,8 @@
       <div id="second-description">
         <h2>The Ultimate Pack</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cum
-          impedit veniam alias repellendus accusantium, harum quae fugit
-          aspernatur a, excepturi animi facere. Sequi, consectetur minima!
+          Get the all in pack, it has all the cover and options that you might
+          require packed in one premium and package
         </p>
 
         <div class="icons-ultimate">
@@ -203,78 +249,270 @@
     <div class="heading">
       <h2>Our Products</h2>
       <br />
+    </div>
 
-      <div class="side-top-five">
-        <div class="single-top-six">
-          <div class="photo">
-            <img src="../../../../assets/cas1.jpg" alt="" />
-          </div>
-          <div class="middle-top-five">
-            <p>Casket&nbsp; <i>R</i>1500</p>
-          </div>
-          <div class="button-top-photo">
-            <button>BUY</button>
-          </div>
-        </div>
+    <div class="home-products">
+      <div class="left-button"></div>
 
-        <div class="single-top-six">
-          <div class="photo">
-            <img src="../../../../assets/images (1).jpg" alt="" />
+      <swiper-container
+        #swiper
+        [loop]="true"
+        autoplay
+        effect="slide"
+        [pagination]="true"
+        (afterinit)="swiperReady()"
+        style="box-shadow: none !important"
+        [shadow]="false"
+        [slideShadows]="false"
+      >
+        <swiper-slide
+          class="the-products"
+          style="box-shadow: none !important"
+          [slideShadows]="false"
+        >
+          <div class="single-top-six">
+            <div class="photo">
+              <img src="../../../../assets/tent.jpg" alt="" />
+            </div>
+            <div class="middle-top-five">
+              <p>Tents&nbsp; <i>R</i>4366</p>
+            </div>
+            <div class="button-top-photo">
+              <button>BUY</button>
+            </div>
           </div>
-          <div class="middle-top-five">
-            <p>Tombstone&nbsp; <i>R</i>800</p>
+
+          <div class="single-top-six">
+            <div class="photo">
+              <img src="../../../../assets/fast-hurae.jpg" alt="" />
+              <div>
+                <p>SALE -25%</p>
+              </div>
+            </div>
+            <div class="middle-top-five">
+              <p>Fast Hurse &nbsp; <i>R</i>2000</p>
+            </div>
+            <div class="button-top-photo">
+              <button>BUY</button>
+            </div>
           </div>
-          <div class="button-top-photo">
-            <button>BUY</button>
+
+          <div class="single-top-six">
+            <div class="photo">
+              <img src="../../../../assets/urn.jpg" alt="" />
+            </div>
+            <div class="middle-top-five">
+              <p>Urn&nbsp; <i>R</i>500</p>
+            </div>
+            <div class="button-top-photo">
+              <button>BUY</button>
+            </div>
           </div>
+
+          <div class="single-top-six">
+            <div class="photo">
+              <img src="../../../../assets/cas1.jpg" alt="" />
+              <div>
+                <p>SALE -25%</p>
+              </div>
+            </div>
+            <div class="middle-top-five">
+              <p>Casket&nbsp; <i>R</i>1500</p>
+            </div>
+            <div class="button-top-photo">
+              <button>BUY</button>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide
+          class="the-products"
+          style="box-shadow: none !important"
+          [slideShadows]="false"
+        >
+          <div class="single-top-six">
+            <div class="photo">
+              <img src="../../../../assets/tent.jpg" alt="" loading="lazy" />
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="middle-top-five">
+              <p>Tents&nbsp; <i>R</i>4366</p>
+            </div>
+            <div class="button-top-photo">
+              <button>BUY</button>
+            </div>
+          </div>
+
+          <div class="single-top-six">
+            <div class="photo">
+              <img src="../../../../assets/fast-hurae.jpg" alt="" />
+            </div>
+            <div class="middle-top-five">
+              <p>Fast Hurse &nbsp; <i>R</i>2000</p>
+            </div>
+            <div class="button-top-photo">
+              <button>BUY</button>
+            </div>
+          </div>
+
+          <div class="single-top-six">
+            <div class="photo">
+              <img src="../../../../assets/urn.jpg" alt="" />
+            </div>
+            <div class="middle-top-five">
+              <p>Urn&nbsp; <i>R</i>500</p>
+            </div>
+            <div class="button-top-photo">
+              <button>BUY</button>
+            </div>
+          </div>
+
+          <div class="single-top-six">
+            <div class="photo">
+              <img src="../../../../assets/cas1.jpg" alt="" />
+              <div>
+                <p>SALE -25%</p>
+              </div>
+            </div>
+            <div class="middle-top-five">
+              <p>Casket&nbsp; <i>R</i>1500</p>
+            </div>
+            <div class="button-top-photo">
+              <button>BUY</button>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide
+          class="the-products"
+          style="box-shadow: none !important"
+          [slideShadows]="false"
+        >
+          <div class="single-top-six">
+            <div class="photo">
+              <img src="../../../../assets/tent.jpg" alt="" />
+            </div>
+            <div class="middle-top-five">
+              <p>Tents&nbsp; <i>R</i>4366</p>
+            </div>
+            <div class="button-top-photo">
+              <button>BUY</button>
+            </div>
+          </div>
+
+          <div class="single-top-six">
+            <div class="photo">
+              <img src="../../../../assets/fast-hurae.jpg" alt="" />
+              <div>
+                <p>SALE -25%</p>
+              </div>
+            </div>
+            <div class="middle-top-five">
+              <p>Fast Hurse &nbsp; <i>R</i>2000</p>
+            </div>
+            <div class="button-top-photo">
+              <button>BUY</button>
+            </div>
+          </div>
+
+          <div class="single-top-six">
+            <div class="photo">
+              <img src="../../../../assets/urn.jpg" alt="" />
+            </div>
+            <div class="middle-top-five">
+              <p>Urn&nbsp; <i>R</i>500</p>
+            </div>
+            <div class="button-top-photo">
+              <button>BUY</button>
+            </div>
+          </div>
+
+          <div class="single-top-six">
+            <div class="photo">
+              <img src="../../../../assets/cas1.jpg" alt="" />
+            </div>
+            <div class="middle-top-five">
+              <p>Casket&nbsp; <i>R</i>1500</p>
+            </div>
+            <div class="button-top-photo">
+              <button>BUY</button>
+            </div>
+          </div>
+        </swiper-slide>
+      </swiper-container>
+      <div class="right-button"></div>
+    </div>
+
+    <!--
+    <div class="side-top-five">
+      <div class="single-top-six">
+        <div class="photo">
+          <img src="../../../../assets/cas1.jpg" alt="" />
         </div>
-        <div class="single-top-six">
-          <div class="photo">
-            <img src="../../../../assets/fast-hurae.jpg" alt="" />
-          </div>
-          <div class="middle-top-five">
-            <p>Fast Hurse &nbsp; <i>R</i>2000</p>
-          </div>
-          <div class="button-top-photo">
-            <button>BUY</button>
-          </div>
+        <div class="middle-top-five">
+          <p>Casket&nbsp; <i>R</i>1500</p>
         </div>
-        <div class="single-top-six">
-          <div class="photo">
-            <img src="../../../../assets/urn.jpg" alt="" />
-          </div>
-          <div class="middle-top-five">
-            <p>Urn&nbsp; <i>R</i>500</p>
-          </div>
-          <div class="button-top-photo">
-            <button>BUY</button>
-          </div>
+        <div class="button-top-photo">
+          <button>BUY</button>
         </div>
-        <div class="single-top-six">
-          <div class="photo">
-            <img src="../../../../assets/tent.jpg" alt="" />
-          </div>
-          <div class="middle-top-five">
-            <p>Tents&nbsp; <i>R</i>4366</p>
-          </div>
-          <div class="button-top-photo">
-            <button>BUY</button>
-          </div>
+      </div>
+
+      <div class="single-top-six">
+        <div class="photo">
+          <img src="../../../../assets/images (1).jpg" alt="" />
         </div>
-        <div class="single-top-six">
-          <div class="photo">
-            <img src="../../../../assets/cas1.jpg" alt="" />
-          </div>
-          <div class="middle-top-five">
-            <p>Caskets&nbsp; <i>R</i>2000</p>
-          </div>
-          <div class="button-top-photo">
-            <button>BUY</button>
-          </div>
+        <div class="middle-top-five">
+          <p>Tombstone&nbsp; <i>R</i>800</p>
+        </div>
+        <div class="button-top-photo">
+          <button>BUY</button>
+        </div>
+      </div>
+      <div class="single-top-six">
+        <div class="photo">
+          <img src="../../../../assets/fast-hurae.jpg" alt="" />
+        </div>
+        <div class="middle-top-five">
+          <p>Fast Hurse &nbsp; <i>R</i>2000</p>
+        </div>
+        <div class="button-top-photo">
+          <button>BUY</button>
+        </div>
+      </div>
+      <div class="single-top-six">
+        <div class="photo">
+          <img src="../../../../assets/urn.jpg" alt="" />
+        </div>
+        <div class="middle-top-five">
+          <p>Urn&nbsp; <i>R</i>500</p>
+        </div>
+        <div class="button-top-photo">
+          <button>BUY</button>
+        </div>
+      </div>
+      <div class="single-top-six">
+        <div class="photo">
+          <img src="../../../../assets/tent.jpg" alt="" />
+        </div>
+        <div class="middle-top-five">
+          <p>Tents&nbsp; <i>R</i>4366</p>
+        </div>
+        <div class="button-top-photo">
+          <button>BUY</button>
+        </div>
+      </div>
+      <div class="single-top-six">
+        <div class="photo">
+          <img src="../../../../assets/cas1.jpg" alt="" />
+        </div>
+        <div class="middle-top-five">
+          <p>Caskets&nbsp; <i>R</i>2000</p>
+        </div>
+        <div class="button-top-photo">
+          <button>BUY</button>
         </div>
       </div>
     </div>
-  </div>
+
+  --></div>
   <!--
   <img src="../../../../assets/logo.PNG" />
   <img src="../../../../assets/logo.PNG" />
@@ -283,8 +521,9 @@
   <button (click)="take()">Huyr</button>
   -->
 
+  <br /><br /><br /><br />
   <div class="heading">
-    <h2>Testimonials</h2>
+    <h2>Meet Our Team</h2>
   </div>
 
   <div class="testimonials">
@@ -294,42 +533,36 @@
           <img src="../../../../assets/profile.jpg" alt="" />
         </div>
         <div class="the-testimony">
-          <h5>Bhut MaJulie</h5>
+          <h5>Image Shandlani</h5>
           <div class="testimony-text">
             <p id="test-m">
-              " Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Reprehenderit quod explicabo praesentium sunt temporibus enim
-              corrupti cum cumque aliquid, eveniet ducimus asperiores maiores
-              tempore blanditiis laudantium? Esse perspiciatis rerum
-              blanditiis?"
+              " 26 Years of experience in the space performing a vriety of roles
+              during that persion. Passionate about the job and helping african
+              families"
             </p>
           </div>
 
           <p id="test-icon">
-            <ion-icon name="time-outline"></ion-icon> &nbsp; 26 Fevruary 2020
+            <ion-icon name="ribbon"></ion-icon> &nbsp; Product Leader
           </p>
         </div>
       </div>
 
       <div class="single-testimony">
         <div class="testimony-pic">
-          <img src="../../../../assets/profile.jpg" alt="" />
+          <img src="../../../../assets/dav_1.png" alt="" />
         </div>
         <div class="the-testimony">
-          <h5>Bhut MaJulie</h5>
+          <h5>John Baloyi</h5>
           <div class="testimony-text">
             <p id="test-m">
-              " Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Reprehenderit quod explicabo praesentium sunt temporibus enim
-              corrupti cum cumque aliquid, eveniet ducimus asperiores maiores
-              tempore blanditiis laudantium? Esse perspiciatis rerum
-              blanditiis?"
+              " 26 Years of experience in the space performing a vriety of roles
+              during that persion. Passionate about the job and helping african
+              families"
             </p>
           </div>
 
-          <p id="test-icon">
-            <ion-icon name="time-outline"></ion-icon> &nbsp; 26 Fevruary 2020
-          </p>
+          <p id="test-icon"><ion-icon name="ribbon"></ion-icon> &nbsp; CFO</p>
         </div>
       </div>
 
@@ -338,17 +571,16 @@
           <img src="../../../../assets/gol.jpg" alt="" />
         </div>
         <div class="the-testimony">
-          <h5>Ngolo Kante</h5>
+          <h5>Nathan Nthuli</h5>
           <div class="testimony-text">
             <p id="test-m">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Reprehenderit quod explicabo praesentium sunt temporibus enim
-              corrupti cum cumque aliquid, eveniet ducimus asperiores maiores
-              tempore blanditiis laudantium? Esse perspiciatis rerum blanditiis?
+              " 26 Years of experience in the space performing a vriety of roles
+              during that persion. Passionate about the job and helping african
+              families"
             </p>
           </div>
           <p id="test-icon">
-            <ion-icon name="time-outline"></ion-icon> &nbsp; 26 Fevruary 2020
+            <ion-icon name="ribbon"></ion-icon> &nbsp; Marketing
           </p>
         </div>
       </div>
@@ -358,17 +590,16 @@
           <img src="../../../../assets/mane.jpg" alt="" />
         </div>
         <div class="the-testimony">
-          <h5>Sadia Mane</h5>
+          <h5>Bafana Hongwana</h5>
           <div class="testimony-text">
             <p id="test-m">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Reprehenderit quod explicabo praesentium sunt temporibus enim
-              corrupti cum cumque aliquid, eveniet ducimus asperiores maiores
-              tempore blanditiis laudantium? Esse perspiciatis rerum blanditiis?
+              " 26 Years of experience in the space performing a vriety of roles
+              during that persion. Passionate about the job and helping african
+              families"
             </p>
           </div>
           <p id="test-icon">
-            <ion-icon name="time-outline"></ion-icon> &nbsp; 26 Fevruary 2020
+            <ion-icon name="ribbon"></ion-icon> &nbsp; Head Of Media
           </p>
         </div>
       </div>
@@ -402,6 +633,39 @@
         <p>Memorials</p>
       </div>
       <div class="over-stat"><p>657</p></div>
+    </div>
+  </div>
+
+  <br /><br /><br /><br />
+  <div class="heading">
+    <h2>Words From Our Clients</h2>
+  </div>
+
+  <div class="new-test">
+    <div class="single-new-tests">
+      <p>
+        <i>"</i><br />
+        The service I recieved from GZX was top notch. I was able to give my
+        grandmother a fitting funeral and grand send off that is line with our
+        costumes. The claim was paid out in less than 24 hours to help speed up
+        the funeral arrangements. <br />
+        <i>"</i>
+      </p>
+
+      <h4>~ Ntombi Mudau</h4>
+    </div>
+
+    <div class="single-new-tests">
+      <p>
+        <i>"</i><br />
+        The service I recieved from GZX was top notch. I was able to give my
+        grandmother a fitting funeral and grand send off that is line with our
+        costumes. The claim was paid out in less than 24 hours to help speed up
+        the funeral arrangements. <br />
+        <i>"</i>
+      </p>
+
+      <h4>~ Ken Nyembe</h4>
     </div>
   </div>
 

@@ -4,8 +4,11 @@ import {
   OnChanges,
   SimpleChanges,
   HostListener,
+  ViewChild,
+  ElementRef,
 } from '@angular/core';
 import { Router } from '@angular/router';
+import Swiper from 'swiper';
 
 @Component({
   selector: 'app-landing',
@@ -13,11 +16,20 @@ import { Router } from '@angular/router';
   styleUrls: ['./landing.page.scss'],
 })
 @HostListener('window:scroll', ['$event'])
-export class LandingPage implements OnInit, OnChanges {
+export class LandingPage {
+  @ViewChild('swiper')
+  swiperRef: ElementRef | undefined;
+  swiper?: Swiper;
+
   constructor(private router: Router) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.swiper = this.swiperRef?.nativeElement.swiper;
+  }
 
+  swiperReady() {
+    this.swiper = this.swiperRef?.nativeElement.swiper;
+  }
   ngOnChanges(changes: SimpleChanges): void {
     if (document.getElementById('nl').scrollTop > 1) {
       document.getElementById('non').style.display = 'none';
@@ -39,6 +51,18 @@ export class LandingPage implements OnInit, OnChanges {
     if (window.scrollY > pic.clientHeight) {
       pic.style.display = 'none';
     }
+  }
+
+  goPrev() {
+    this.swiper?.slidePrev();
+  }
+
+  goNext() {
+    this.swiper?.slideNext();
+  }
+
+  swiperSlideChanged(e: any) {
+    console.log('changed', e);
   }
 
   admin() {

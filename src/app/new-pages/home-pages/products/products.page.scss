@@ -83,7 +83,6 @@
   .products {
     width: 100%;
     height: fit-content;
-    padding-top: 2rem;
     padding-bottom: 2rem;
     background: #eee;
     position: relative;
@@ -115,8 +114,8 @@
         flex-wrap: wrap;
 
         div.single-top-six {
-          width: 28%;
-          height: 62vh;
+          width: 23%;
+          height: 55vh;
           margin-right: 1.5rem;
           margin-bottom: 2rem;
           display: flex;
@@ -152,6 +151,7 @@
 
               p {
                 font-size: 1.05rem;
+                color: #bc3e19;
               }
             }
 
@@ -191,7 +191,8 @@
               width: 60%;
               height: 95%;
               background: transparent;
-              color: #1997bc;
+              color: #eee;
+              background: #1997bc;
               font-weight: 700;
               text-transform: uppercase;
 
@@ -220,6 +221,39 @@
     }
   }
 
+  .mid-quote {
+    width: 100%;
+    height: 50vh;
+    background: url(../../../../assets/gal2.jpg) no-repeat;
+    background-size: cover;
+
+    div {
+      width: 100%;
+      height: 100%;
+      color: #c7c4c4;
+      background: rgba(0, 0, 0, 0.75);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-position: center;
+      background-attachment: fixed !important;
+
+      h3 {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-style: italic;
+      }
+
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #1997bc;
+        font-weight: bold;
+        font-size: 1.35rem;
+      }
+    }
+  }
+
   .pakages {
     margin-left: 7.5rem;
     width: 85%;
@@ -239,10 +273,10 @@
       padding: 1rem;
       color: #354461;
 
-      h3{
+      h3 {
         font-weight: bold;
         font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;;
+          sans-serif;
       }
 
       p {
