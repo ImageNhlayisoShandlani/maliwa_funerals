@@ -5,6 +5,91 @@
 .box-wrapper {
   width: 100%;
   height: fit-content;
+
+  .gallery-main {
+    width: 90%;
+    margin-left: 5%;
+    height: 75vh;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+      rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+      rgba(0, 0, 0, 0.07) 0px 16px 16px;
+
+    .image-welcome {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .right-gal-content {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .heading {
+        width: 100%;
+        height: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        button {
+          background: #1997bc;
+          padding: 1rem;
+          color: #fff;
+        }
+      }
+
+      .content {
+        width: 85%;
+        height: 30%;
+      }
+
+      .main-icons {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        div {
+          padding: 0.75rem;
+          height: 100%;
+          display: flex;
+          align-self: center;
+          justify-content: center;
+          flex-direction: column;
+
+          p {
+            font-weight: bold;
+            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+
+          ion-icon {
+            color: #bc3e19;
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
   .banner {
     width: 100%;
     height: 93vh;
@@ -167,19 +252,20 @@
   }
 
   .welcome-division {
-    margin-top: 1.5rem;
-    height: 45vh;
-    width: 100%;
+    height: 70vh;
+    width: 92%;
     padding: 3.2rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin-left: 4%;
 
     .welcome-heading,
-    .welcome-explain,
-    .welcome-icon {
-      width: 30%;
+    .welcome-explain {
+      width: 46%;
       height: 100%;
       display: flex;
       align-items: center;
@@ -209,22 +295,164 @@
       }
     }
 
-    .welcome-icon {
+    .welcome-heading {
+      flex-direction: column;
+
       div {
+        width: 16rem;
+        height: 16rem;
+        border: #354461 3px solid;
+        border-radius: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 16rem;
-        height: 16rem;
-        border: #354461 5px solid;
-        border-radius: 100%;
-        color: #bc3e19;
 
         img {
-          width: 80%;
-          height: 50%;
+          width: 14rem;
+          height: 9rem;
         }
       }
+    }
+  }
+
+  .mid-quote {
+    width: 100%;
+    height: 30vh;
+    background: url(../../../../assets/gal4.jpg) no-repeat;
+    background-size: cover;
+    color: #c7c4c4;
+    background: #354461;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .quote-info {
+      width: 100%;
+      height: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h3 {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-style: italic;
+      }
+
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #1997bc;
+        font-weight: bold;
+        font-size: 1.35rem;
+      }
+    }
+
+    .icon-top,
+    .icon-bottom {
+      width: 100%;
+      height: 10%;
+      display: flex;
+      align-items: center;
+
+      ion-icon {
+        font-size: 2rem;
+        color: #bc3e19;
+      }
+    }
+
+    .icon-top {
+      padding-right: 5rem;
+      justify-content: flex-end;
+      padding-top: 1rem;
+    }
+
+    .icon-bottom {
+      justify-content: flex-start;
+      padding-left: 5rem;
+      padding-bottom: 1rem;
+
+      ion-icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .members {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    background: #f4f5f8;
+
+    .single-member {
+      padding-top: 0.85rem;
+      padding-left: 0.5rem;
+      width: 80%;
+      height: 20vh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      padding-bottom: 1.5rem;
+      padding: 1rem;
+      color: #bc3e19;
+      background: #354461;
+      border-bottom: 5px rgba(239, 237, 237, 0.737) solid;
+      margin-bottom: 2.5rem;
+
+      p {
+        font-style: italic;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgba(239, 237, 237, 0.737);
+      }
+
+      h2 {
+        color: #1997bc;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+
+      .member-pic {
+        width: 20%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 40%;
+          height: 95%;
+          border-radius: 50%;
+        }
+      }
+
+      .details {
+        width: 25%;
+        height: 100%;
+
+        h4 {
+          font-style: italic;
+          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+          color: #aaa;
+        }
+
+        p {
+          color: #bc3e19;
+        }
+      }
+    }
+
+    .flex-dot {
+      height: 8vh;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      width: 2px;
+      border-right: #bc3e19 4px dotted;
     }
   }
 
@@ -234,71 +462,31 @@
 
   .middle-home {
     width: 100%;
-    height: 250vh;
-    background: #f6f4f4;
+    height: fit-content;
+    background: #f4f5f8;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 
-    .mid-quote {
+    .services {
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
       width: 100%;
-      height: 20%;
-      background: url(../../../../assets/gal4.jpg) no-repeat;
-      background-size: cover;
-
-      div {
-        width: 100%;
-        height: 100%;
-        color: #c7c4c4;
-        background: rgba(0, 0, 0, 0.75);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        background-position: center;
-        background-attachment: fixed !important;
-
-        h3 {
-          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-            sans-serif;
-          font-style: italic;
-        }
-
-        p {
-          font-family: Arial, Helvetica, sans-serif;
-          color: #1997bc;
-          font-weight: bold;
-          font-size: 1.35rem;
-        }
-      }
-    }
-
-    .services,
-    .second-banner {
-      width: 100%;
-      height: 40%;
+      height: 65vh;
       display: flex;
       align-items: center;
-    }
-
-    .services {
-      margin-top: -5rem;
       flex-direction: row;
       justify-content: space-evenly;
 
       .single-service {
-        width: 20%;
-        height: 60%;
+        width: 21%;
+        height: 100%;
         background: #fff;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        border-radius: 10px;
 
         ion-icon {
           height: 20%;
@@ -471,27 +659,15 @@
   .testimonials {
     width: 100%;
     height: 100vh;
-    background: url(../../../../assets/static-area.jpg) no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background: #354461;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 6rem;
 
-    .heading {
-      height: 100%;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.85);
-      h2 {
-        color: #aaa;
-      }
-    }
-
     .cover-testimonials {
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.85);
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -518,11 +694,9 @@
           align-items: center;
           justify-content: center;
 
-          img {
-            width: 5rem;
-            height: 5rem;
-            border-radius: 50%;
-            border: #354461 2px solid;
+          ion-icon {
+            color: #bc3e19;
+            font-size: 2rem;
           }
         }
 
@@ -549,7 +723,8 @@
           }
 
           #test-icon {
-            color: #333;
+            color: #354461;
+            font-size: 1.5rem;
             ion-icon {
               color: #bc3e19;
               font-size: 2rem;
@@ -614,6 +789,66 @@
           font-weight: bold;
           font-size: 1.3rem;
         }
+      }
+    }
+  }
+
+  .pakages {
+    margin-left: 5rem;
+    width: 90%;
+    margin-top: 3.5rem;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .single-pa {
+      width: 45%;
+      height: 50vh;
+      background: #f4f5f8;
+      margin-bottom: 1.5rem;
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      padding: 1rem;
+      color: #354461;
+
+      h3 {
+        font-weight: bold;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+
+      p {
+        font-style: italic;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+      }
+
+      .checklist {
+        width: 100%;
+        height: 65%;
+
+        .single-check {
+          width: 100%;
+          height: 15%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          margin-bottom: 0.5rem;
+
+          ion-icon {
+            font-size: 1.5rem;
+            color: #1997bc;
+            margin-right: 1rem;
+          }
+        }
+      }
+
+      button {
+        width: 8rem;
+        height: 1.5rem;
+        background: #bc3e19;
+        color: #fff;
       }
     }
   }
@@ -803,6 +1038,64 @@ footer {
 }
 
 @media (min-width: 350px) and (max-width: 500px) and (orientation: portrait) {
+  .single-member {
+    width: 100% !important;
+    height: 100% !important;
+    margin-left: 0 !important;
+
+    img {
+      height: 40% !important;
+    }
+  }
+  .pakages {
+    margin-left: 1rem !important;
+
+    .single-pa {
+      width: 100% !important;
+    }
+  }
+  .mid-quote {
+    .quote-info {
+      padding: 1rem !important;
+    }
+    .icon-bottom {
+      padding-left: 1rem !important;
+    }
+
+    .icon-top {
+      padding-right: 1rem !important;
+    }
+  }
+  .gallery-main {
+    width: 98% !important;
+    margin-left: 1% !important;
+    height: 90vh !important;
+    flex-direction: column !important;
+
+    .image-welcome {
+      width: 100% !important;
+      height: 35% !important;
+    }
+
+    .right-gal-content {
+      width: 100% !important;
+      height: 65% !important;
+      align-items: flex-start !important;
+
+      .heading {
+        align-items: flex-start !important;
+      }
+
+      .main-icons {
+        height: 25% !important;
+
+        p {
+          font-size: 0.75rem !important;
+          font-weight: 400 !important;
+        }
+      }
+    }
+  }
   .mid-quote {
     h3 {
       font-size: 14px !important;
@@ -929,7 +1222,7 @@ footer {
 
   .middle-home {
     margin-bottom: 6rem;
-    margin-top: 7rem;
+    margin-top: 0rem;
   }
 
   .services {
@@ -981,7 +1274,7 @@ footer {
   .testimonials {
     height: fit-content !important;
     margin-bottom: 3rem;
-    padding-bottom: 5rem;
+    padding-bottom: 0rem !important;
 
     .single-testimony {
       width: 100% !important;

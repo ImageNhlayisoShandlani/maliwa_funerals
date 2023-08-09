@@ -27,6 +27,10 @@ export class LandingPage {
     this.swiper = this.swiperRef?.nativeElement.swiper;
   }
 
+  opj() {
+    let element = document.getElementById('tests');
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
   swiperReady() {
     this.swiper = this.swiperRef?.nativeElement.swiper;
   }

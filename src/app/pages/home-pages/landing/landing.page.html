@@ -18,15 +18,18 @@
           <a>Gallery</a>
         </li>
       -->
+
+        <!--
         <li (click)="about()">
           <a>About US</a>
         </li>
+      -->
         <li (click)="contact()">
           <a>Contact US</a>
         </li>
 
         <li (click)="admin()">
-          <a>Admin</a>
+          <a>Login</a>
         </li>
 
         <div>
@@ -102,8 +105,60 @@
     </div>
   </div>
 
+  <div class="gallery-main">
+    <div class="image-welcome">
+      <img
+        src="../../../../assets/new-logos/BLACK N WHITE alternative/GZX-02.png"
+        alt=""
+      />
+    </div>
+
+    <div class="right-gal-content">
+      <div class="heading">
+        <button>A Final Home For All</button>
+        <h2>Welcome To GZX Funeral Servies</h2>
+      </div>
+
+      <div class="content">
+        <p>
+          For us there is no greater honor than helping to remember a life
+          lived. We are dedicated, local professionals committed to getting
+          every detail right, every time. We do this by listening, caring and
+          guiding each and every family who walks through our doors. It's our
+          oath
+        </p>
+      </div>
+
+      <div class="main-icons">
+        <div class="single-icon-main">
+          <ion-icon name="car-sport"></ion-icon>
+          <p>Vehicles</p>
+        </div>
+        <div class="single-icon-main">
+          <ion-icon name="calendar"></ion-icon>
+          <p>Since 1980</p>
+        </div>
+        <div class="single-icon-main">
+          <ion-icon name="location"></ion-icon>
+          <p>Mpumalanga</p>
+        </div>
+        <div class="single-icon-main">
+          <ion-icon name="file-tray-stacked"></ion-icon>
+          <p>300+ Cases</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--
   <div class="welcome-division">
     <div class="welcome-heading">
+      <div>
+        <img
+          src="../../../../assets/new-logos/BLACK N WHITE alternative/GZX-02.png"
+          alt=""
+        />
+      </div>
       <h3>
         Welcome to <i>GZX Funeral & Buriel </i> Services, Here To Serve You and
         Your People <strong>.....</strong>
@@ -119,17 +174,10 @@
         overall our etiquette.
       </p>
     </div>
-
-    <div class="welcome-icon">
-      <div>
-        <img
-          src="../../../../assets/new-logos/BLACK N WHITE alternative/GZX-02.png"
-          alt=""
-        />
-      </div>
-    </div>
   </div>
+-->
   <div class="heading">
+    <div></div>
     <h2>Services we offer</h2>
   </div>
   <div class="middle-home">
@@ -184,14 +232,22 @@
     </div>
 
     <div class="mid-quote">
-      <div>
+      <div class="icon-top">
+        <ion-icon name="paw"></ion-icon>
+      </div>
+      <div class="quote-info">
         <h3>
           It is importatnt for us as africans to give our loved ones a dignified
           funeral for them to never be forgetten.
         </h3>
         <p>- Image Shondlani</p>
       </div>
+      <div class="icon-bottom">
+        <ion-icon name="paw"></ion-icon>
+      </div>
     </div>
+
+    <!--
 
     <div class="second-banner">
       <div id="left-pic">
@@ -243,12 +299,13 @@
         <ion-button (click)="getOffer()">Get Now</ion-button>
       </div>
     </div>
-  </div>
+
+  --></div>
 
   <div class="products">
     <div class="heading">
+      <div></div>
       <h2>Our Products</h2>
-      <br />
     </div>
 
     <div class="home-products">
@@ -513,6 +570,121 @@
     </div>
 
   --></div>
+
+  <div class="pakages">
+    <div class="single-pa">
+      <h3>Burial Cover</h3>
+      <div class="checklist">
+        <div class="single-check">
+          <ion-icon name="checkmark-circle"></ion-icon>
+          <p>Buriel Option 1</p>
+        </div>
+
+        <div class="single-check">
+          <ion-icon name="checkmark-circle"></ion-icon>
+          <p>Buriel Option 2</p>
+        </div>
+
+        <div class="single-check">
+          <ion-icon name="checkmark-circle"></ion-icon>
+          <p>Buriel Option 3</p>
+        </div>
+
+        <div class="single-check">
+          <ion-icon name="checkmark-circle"></ion-icon>
+          <p>Buriel Option 4</p>
+        </div>
+
+        <div class="single-check">
+          <ion-icon name="checkmark-circle"></ion-icon>
+          <p>Buriel Option 5</p>
+        </div>
+      </div>
+      <p class="price">@ R100 P/M</p>
+      <button>Get Cover</button>
+    </div>
+
+    <div class="single-pa">
+      <h3>Memorial Cover</h3>
+      <div class="checklist">
+        <div class="single-check">
+          <ion-icon name="checkmark-circle"></ion-icon>
+          <p>Memorial Option 1</p>
+        </div>
+
+        <div class="single-check">
+          <ion-icon name="checkmark-circle"></ion-icon>
+          <p>Memorial Option 2</p>
+        </div>
+
+        <div class="single-check">
+          <ion-icon name="checkmark-circle"></ion-icon>
+          <p>Memorial Option 3</p>
+        </div>
+
+        <div class="single-check">
+          <ion-icon name="checkmark-circle"></ion-icon>
+          <p>Memorial Option 4</p>
+        </div>
+      </div>
+      <p class="price">R125 P/M</p>
+      <button>Get Cover</button>
+    </div>
+
+    <div class="single-pa">
+      <h3>Funeral Cover</h3>
+      <div class="checklist">
+        <div class="single-check">
+          <ion-icon name="checkmark-circle"></ion-icon>
+          <p>Funeral Cover 1</p>
+        </div>
+
+        <div class="single-check">
+          <ion-icon name="checkmark-circle"></ion-icon>
+          <p>Funeral Cover 2</p>
+        </div>
+
+        <div class="single-check">
+          <ion-icon name="checkmark-circle"></ion-icon>
+          <p>Funeral Cover 3</p>
+        </div>
+
+        <div class="single-check">
+          <ion-icon name="checkmark-circle"></ion-icon>
+          <p>Funeral Cover 4</p>
+        </div>
+      </div>
+      <p class="price">@ R150 P/M</p>
+      <button>Get Cover</button>
+    </div>
+
+    <div class="single-pa">
+      <h3>The Ultimate Cover</h3>
+      <div class="checklist">
+        <div class="single-check">
+          <ion-icon name="checkmark-circle"></ion-icon>
+          <p>Funeral Cover</p>
+        </div>
+
+        <div class="single-check">
+          <ion-icon name="checkmark-circle"></ion-icon>
+          <p>Buriel Options</p>
+        </div>
+
+        <div class="single-check">
+          <ion-icon name="checkmark-circle"></ion-icon>
+          <p>All - In - One</p>
+        </div>
+
+        <div class="single-check">
+          <ion-icon name="checkmark-circle"></ion-icon>
+          <p>Obituary Cover</p>
+        </div>
+      </div>
+      <p class="price">@ R400 P/M</p>
+      <button>Get Cover</button>
+    </div>
+  </div>
   <!--
   <img src="../../../../assets/logo.PNG" />
   <img src="../../../../assets/logo.PNG" />
@@ -520,17 +692,75 @@
   <img src="../../../../assets/logo.PNG" id="non" />
   <button (click)="take()">Huyr</button>
   -->
+  <div class="mid-quote" style="margin-top: 3rem">
+    <div class="icon-top">
+      <ion-icon name="paw"></ion-icon>
+    </div>
+    <div class="quote-info">
+      <h3>
+        Knowing the team and product you are dealing with helps the customer
+        build trust for the product
+      </h3>
+      <p>- Senzo Mnguni</p>
+    </div>
+    <div class="icon-bottom">
+      <ion-icon name="paw"></ion-icon>
+    </div>
+  </div>
 
-  <br /><br /><br /><br />
+  <div class="members">
+    <div class="heading">
+      <div></div>
+      <h2>About Us</h2>
+    </div>
+    <div class="single-member">
+      <h2>MISSION</h2>
+      <p>
+        To help create remembrances that reflect the unique values, character
+        and traditions of the families we serve. That is our passion, that is
+        our purpose, that is our promise. Guaranteed
+      </p>
+    </div>
+
+    <div
+      class="single-member"
+      style="
+        margin-left: 8rem;
+        background: rgba(239, 237, 237, 0.737);
+        border-color: #bc3e19;
+      "
+    >
+      <h2>VALUES</h2>
+      <p style="color: #bc3e19">
+        For us there is no greater honor than helping to remember a life lived.
+        We are dedicated, local professionals committed to getting every detail
+        right, every time. We do this by listening, caring and guiding each and
+        every family who walks through our doors. It's our oath , our mantra and
+        overall our etiquette.
+      </p>
+    </div>
+
+    <div class="single-member" style="margin-left: 16rem">
+      <h2>GOALS</h2>
+      <p>
+        Serving families is our passion, our commitment and our expertise.
+        Whether you're planning a funeral or cremation service for a loved one,
+        or making your own arrangements in advance, meaningful life celebrations
+        begin with GZX FUNERALS.
+      </p>
+    </div>
+  </div>
+
   <div class="heading">
+    <div></div>
     <h2>Meet Our Team</h2>
   </div>
 
-  <div class="testimonials">
+  <div class="testimonials" id="test">
     <div class="cover-testimonials">
       <div class="single-testimony">
         <div class="testimony-pic">
-          <img src="../../../../assets/profile.jpg" alt="" />
+          <ion-icon name="ribbon"></ion-icon>
         </div>
         <div class="the-testimony">
           <h5>Image Shandlani</h5>
@@ -542,15 +772,13 @@
             </p>
           </div>
 
-          <p id="test-icon">
-            <ion-icon name="ribbon"></ion-icon> &nbsp; Product Leader
-          </p>
+          <p id="test-icon">Product Leader</p>
         </div>
       </div>
 
       <div class="single-testimony">
         <div class="testimony-pic">
-          <img src="../../../../assets/dav_1.png" alt="" />
+          <ion-icon name="ribbon"></ion-icon>
         </div>
         <div class="the-testimony">
           <h5>John Baloyi</h5>
@@ -562,13 +790,13 @@
             </p>
           </div>
 
-          <p id="test-icon"><ion-icon name="ribbon"></ion-icon> &nbsp; CFO</p>
+          <p id="test-icon">CFO</p>
         </div>
       </div>
 
       <div class="single-testimony">
         <div class="testimony-pic">
-          <img src="../../../../assets/gol.jpg" alt="" />
+          <ion-icon name="ribbon"></ion-icon>
         </div>
         <div class="the-testimony">
           <h5>Nathan Nthuli</h5>
@@ -579,15 +807,13 @@
               families"
             </p>
           </div>
-          <p id="test-icon">
-            <ion-icon name="ribbon"></ion-icon> &nbsp; Marketing
-          </p>
+          <p id="test-icon">Marketing</p>
         </div>
       </div>
 
       <div class="single-testimony">
         <div class="testimony-pic">
-          <img src="../../../../assets/mane.jpg" alt="" />
+          <ion-icon name="ribbon"></ion-icon>
         </div>
         <div class="the-testimony">
           <h5>Bafana Hongwana</h5>
@@ -598,15 +824,14 @@
               families"
             </p>
           </div>
-          <p id="test-icon">
-            <ion-icon name="ribbon"></ion-icon> &nbsp; Head Of Media
-          </p>
+          <p id="test-icon">Head Of Media</p>
         </div>
       </div>
     </div>
   </div>
 
   <div class="heading">
+    <div></div>
     <h2>Since We Started</h2>
   </div>
 
@@ -637,6 +862,8 @@
   </div>
 
   <br /><br /><br /><br />
+
+  <!--
   <div class="heading">
     <h2>Words From Our Clients</h2>
   </div>
@@ -668,6 +895,7 @@
       <h4>~ Ken Nyembe</h4>
     </div>
   </div>
+  -->
 
   <app-footer></app-footer>
 </ion-content>
