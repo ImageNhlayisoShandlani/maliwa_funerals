@@ -548,7 +548,32 @@ ion-list p {
 
 @media (min-width: 350px) and (max-width: 500px) and (orientation: portrait) {
   ion-header {
-    display: none;
+    li {
+      display: none !important;
+    }
+
+    button {
+      width: 5rem !important;
+      height: 1.75rem !important;
+    }
+
+    .logo {
+      width: 6rem !important;
+      height: 90% !important;
+    }
+
+    ul {
+      div {
+        margin-left: -2.5rem !important;
+        p {
+          font-size: 0.72rem !important;
+        }
+
+        ion-icon {
+          font-size: 1.5rem !important;
+        }
+      }
+    }
   }
 
   footer {
