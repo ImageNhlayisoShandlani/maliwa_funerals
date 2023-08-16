@@ -34,7 +34,7 @@
 
         <div>
           <ion-icon name="logo-whatsapp"></ion-icon>
-          <p>068 6465 2655</p>
+          <p>087 821 3692</p>
         </div>
 
         <button (click)="getOffer()">Get Quote</button>
@@ -106,9 +106,23 @@
   </div>
 
   <div class="gallery-main">
-    <div class="image-welcome">
-      <img src="../../../../assets/new-logos/GZX-01.png" alt="" />
-    </div>
+    <swiper-container
+      class="left-gal-main-slide"
+      [loop]="true"
+      autoplay
+      effect="flip"
+      mousewheel-force-to-axis="true"
+    >
+      <swiper-slide>
+        <img src="../../../../assets/gal4.jpg" alt="" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="../../../../assets/promo.jpg" alt="" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="../../../../assets/gal2.jpg" alt="" />
+      </swiper-slide>
+    </swiper-container>
 
     <div class="right-gal-content">
       <div class="heading">

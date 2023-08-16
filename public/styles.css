@@ -1433,6 +1433,17 @@ div.desktop-menu ul {
   flex-direction: row;
   width: 60%;
 }
+div.desktop-menu ul div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+div.desktop-menu ul div ion-icon {
+  color: #25d366;
+  font-size: 1.65rem;
+  margin-right: 0.5rem;
+}
 div.desktop-menu ul li {
   list-style: none;
 }
@@ -1443,12 +1454,12 @@ div.desktop-menu ul li a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 div.desktop-menu ul li a:hover {
-  color: #cd9833;
+  color: #e95950;
   font-size: 1.2rem;
   font-family: cursive;
 }
 div.desktop-menu ul li.active a {
-  color: #cd9833;
+  color: #e95950;
   font-size: 1.2rem;
   font-family: cursive;
   transition: ease-in 0.2s;
@@ -1458,7 +1469,7 @@ div.desktop-menu ul li.active a:hover {
   cursor: pointer;
 }
 div.desktop-menu ul button {
-  background: #cd9833;
+  background: #e95950;
   height: 2rem;
   width: 6rem;
   color: #fff;
@@ -1490,11 +1501,18 @@ div.desktop-menu .search-area ion-input {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 1rem;
+  flex-direction: row;
+  margin-top: 7.5rem;
   margin-bottom: 1rem;
 }
+.heading div {
+  width: 2px;
+  height: 2.5rem;
+  border: 3px solid #e95950;
+  margin-right: 0.85rem;
+}
 .heading h2 {
-  font-family: Lucida Bright, Georgia, serif;
+  font-family: Lucida Bright, Georgia, serif !important;
 }
 .heading p {
   font-style: italic;
@@ -1821,8 +1839,25 @@ ion-list p {
   }
 }
 @media (min-width: 350px) and (max-width: 500px) and (orientation: portrait) {
-  ion-header {
-    display: none;
+  ion-header li {
+    display: none !important;
+  }
+  ion-header button {
+    width: 5rem !important;
+    height: 1.75rem !important;
+  }
+  ion-header .logo {
+    width: 6rem !important;
+    height: 90% !important;
+  }
+  ion-header ul div {
+    margin-left: -2.5rem !important;
+  }
+  ion-header ul div p {
+    font-size: 0.72rem !important;
+  }
+  ion-header ul div ion-icon {
+    font-size: 1.5rem !important;
   }
 
   footer {

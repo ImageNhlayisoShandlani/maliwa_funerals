@@ -9,17 +9,15 @@
   .gallery-main {
     width: 90%;
     margin-left: 5%;
-    height: 75vh;
+    height: 65vh;
     margin-top: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
-      rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
-      rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 
-    .image-welcome {
+    .left-gal-main-slide {
       width: 50%;
       height: 100%;
       display: flex;
@@ -44,10 +42,7 @@
       .heading {
         width: 100%;
         height: 15%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column !important;
 
         button {
           background: #1997bc;
@@ -1071,28 +1066,27 @@ footer {
     margin-left: 1% !important;
     height: 90vh !important;
     flex-direction: column !important;
+    margin-top: 2rem !important;
 
-    .image-welcome {
+    .left-gal-main-slide {
       width: 100% !important;
-      height: 35% !important;
+      height: 45% !important;
     }
 
     .right-gal-content {
       width: 100% !important;
-      height: 65% !important;
-      align-items: flex-start !important;
-
-      .heading {
-        align-items: flex-start !important;
-      }
+      height: 55% !important;
 
       .main-icons {
         height: 25% !important;
+      }
 
-        p {
-          font-size: 0.75rem !important;
-          font-weight: 400 !important;
-        }
+      h2 {
+        font-size: 18px !important;
+      }
+
+      p {
+        font-size: 12px !important;
       }
     }
   }
