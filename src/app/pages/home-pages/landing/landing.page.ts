@@ -17,7 +17,7 @@ import { Router } from '@angular/router';
 })
 @HostListener('window:scroll', ['$event'])
 export class LandingPage {
-  @ViewChild('swiper')
+  //@ViewChild('swiper')
   //swiperRef: ElementRef | undefined;
   //swiper?: Swiper;
 
