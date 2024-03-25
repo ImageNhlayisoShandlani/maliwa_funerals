@@ -8,7 +8,7 @@ import {
   ElementRef,
 } from '@angular/core';
 import { Router } from '@angular/router';
-import Swiper from 'swiper';
+//import Swiper from 'swiper';
 
 @Component({
   selector: 'app-landing',
@@ -18,13 +18,13 @@ import Swiper from 'swiper';
 @HostListener('window:scroll', ['$event'])
 export class LandingPage {
   @ViewChild('swiper')
-  swiperRef: ElementRef | undefined;
-  swiper?: Swiper;
+  //swiperRef: ElementRef | undefined;
+  //swiper?: Swiper;
 
   constructor(private router: Router) {}
 
   ngOnInit() {
-    this.swiper = this.swiperRef?.nativeElement.swiper;
+    //this.swiper = this.swiperRef?.nativeElement.swiper;
   }
 
   opj() {
@@ -32,7 +32,7 @@ export class LandingPage {
     element.scrollIntoView({ behavior: 'smooth' });
   }
   swiperReady() {
-    this.swiper = this.swiperRef?.nativeElement.swiper;
+   // this.swiper = this.swiperRef?.nativeElement.swiper;
   }
   ngOnChanges(changes: SimpleChanges): void {
     if (document.getElementById('nl').scrollTop > 1) {
@@ -58,11 +58,11 @@ export class LandingPage {
   }
 
   goPrev() {
-    this.swiper?.slidePrev();
+    ////this.swiper?.slidePrev();
   }
 
   goNext() {
-    this.swiper?.slideNext();
+    //this.swiper?.slideNext();
   }
 
   swiperSlideChanged(e: any) {
